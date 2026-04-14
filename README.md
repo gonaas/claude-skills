@@ -18,7 +18,7 @@ Copy any skill folder to your `~/.claude/skills/` directory:
 
 ```bash
 # Clone the repo
-git clone https://github.com/astudillogonzalo/claude-skills.git
+git clone https://github.com/gonaas/claude-skills.git
 
 # Install all skills
 cp -r claude-skills/skills/* ~/.claude/skills/
@@ -39,8 +39,3 @@ Skills are triggered automatically when relevant, or you can invoke them directl
 /compound-component
 ```
 
-## Credits
-
-- `tdd`, `systematic-debugging`, `shaping` — adapted from [somebody32/agents](https://github.com/somebody32/agents)
-- `react-best-practices` — based on [Vercel/Next.js documentation](https://nextjs.org/docs)
-- `compound-component` — original
