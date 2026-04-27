@@ -45,6 +45,15 @@ A failing test takes ~60 seconds and simultaneously proves the fix works and pre
 | "It's a hotfix/emergency" | Hotfixes without tests cause the next P0 incident. |
 | "The framework handles it" | You're testing your code, not the framework. |
 
+## Tactical Tool: /generate-tests
+
+Use the `/generate-tests` command as the mechanical arm of TDD:
+
+- **RED step** → `/generate-tests --tdd <ComponentName>` scaffolds exactly one minimal failing test
+- **After REFACTOR** → `/generate-tests <file-path>` fills in edge cases and integration tests for the completed code
+
+Do not use `/generate-tests <file-path>` as a substitute for TDD — it generates coverage for existing code, which is valuable but different from designing behavior with tests first.
+
 ## Supporting Files
 
 - **anti-patterns.md** — 5 common testing mistakes and how to fix them

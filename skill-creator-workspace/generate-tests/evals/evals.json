@@ -1,0 +1,35 @@
+{
+  "skill_name": "generate-tests",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "genera tests para src/auth/login.ts",
+      "expected_output": "Detects coverage mode (file exists). Generates full test suite with unit tests (happy path + error cases), mocks for external dependencies, follows AAA pattern. Does NOT generate a single failing test.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "/generate-tests --tdd UserRepository",
+      "expected_output": "Detects TDD mode (--tdd flag). Generates EXACTLY ONE minimal failing test that describes a single behavior of UserRepository. Runs the test to verify it fails. Ends with message instructing user to implement code to make it pass, then use coverage mode.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "crea tests para el componente ProductCard que tengo en components/ProductCard.tsx",
+      "expected_output": "Detects coverage mode (file path given and exists). Generates React Testing Library tests covering rendering, user interactions, props, and edge cases.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "necesito implementar un servicio de pagos, empieza con los tests",
+      "expected_output": "Detects TDD mode (no file exists yet, user says 'empieza con los tests'). Generates ONE failing test that defines the first behavior of the payment service. Asks clarifying questions if the behavior is ambiguous.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "escribe tests para este código: function add(a, b) { return a + b; }",
+      "expected_output": "Detects coverage mode (inline code provided). Generates tests for the add function covering happy path (positive numbers, floats, negatives) and edge cases (NaN, null, strings). Follows AAA pattern.",
+      "files": []
+    }
+  ]
+}

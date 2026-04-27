@@ -5,7 +5,7 @@ description: |
   Use when: debugging, bug won't reproduce, error investigation, "no funciona", "falla", "error".
   Trigger on: "bug", "debug", "no funciona", "error", "falla", "se rompe", "investigate".
 author: Gonzalo Astudillo
-version: 1.0.0
+version: 1.1.0
 date: 2026-04-14
 user-invocable: true
 ---
@@ -55,6 +55,26 @@ Three failed fix attempts = architectural problem. Stop. Discuss with stakeholde
 - Fixing the error location instead of the root cause
 - Attempting a 4th fix after 3 failures
 - Adding logging after the fact instead of before
+
+### Phase 4 (Optional): Document as GitHub Issue
+
+After Phase 3, if the fix is non-trivial or should be tracked, ask:
+
+> "¿Convertimos esto en un GitHub issue?"
+
+If yes, generate an issue with this structure:
+
+- **Title**: `[Bug] <concise description of the broken behavior>`
+- **Problem**: What breaks, under what conditions, and the root cause found in Phase 2
+- **Root Cause**: The specific function/invariant/assumption that failed
+- **TDD Fix Plan**: Ordered RED-GREEN cycles
+  - 🔴 RED: a test that captures the broken behavior (fails today)
+  - 🟢 GREEN: the minimal code change to make it pass
+  - Repeat for each distinct behavior that needs fixing
+- **Acceptance Criteria**: Observable behaviors that must hold after the fix
+- **Out of Scope**: What this fix deliberately does NOT address
+
+Use behavior descriptions, not file paths — file paths rot. Describe contracts and invariants.
 
 ## Supporting Files
 
