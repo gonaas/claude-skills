@@ -1,11 +1,7 @@
 ---
 name: design-an-interface
 description: |
-  "Design It Twice" methodology for APIs, modules, and contracts. Launches parallel sub-agents
-  with opposing constraints to explore radically different designs before committing to one.
-  Use when: designing an API, module interface, data contract, or any public-facing surface.
-  Trigger on: "diseña la interfaz", "cómo debería ser X", "qué API usar", "diseña el contrato",
-  "design an interface", "design the API", "what should the interface look like".
+  Use when a user is designing — not implementing — an API, interface, module contract, hook, or SDK surface and is undecided about which shape to use. Prime signals: wanting to explore multiple design options before coding, asking which pattern to choose (callbacks vs events, builder vs factory), expressing uncertainty about the interface shape, or explicitly requesting alternatives to compare before committing. Generates three parallel designs with opposing constraints (minimal, flexible, ergonomic) and recommends one. Skip when the interface shape is already decided and the task is implementation, testing, debugging, or code review.
 author: Gonzalo Astudillo
 version: 1.0.0
 date: 2026-04-27

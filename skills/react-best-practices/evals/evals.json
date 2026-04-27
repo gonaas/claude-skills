@@ -1,0 +1,22 @@
+[
+  {"query": "tengo un componente que hace fetch de la API de productos, debo marcarlo como 'use client' o dejarlo como Server Component?", "should_trigger": true},
+  {"query": "cómo optimizo las imágenes en mi app Next.js 14? están tardando mucho en cargar", "should_trigger": true},
+  {"query": "mi página de Next.js carga lento, quiero usar Server Components para mejorar el Time to First Byte", "should_trigger": true},
+  {"query": "how should I handle loading and error states in my Next.js App Router page?", "should_trigger": true},
+  {"query": "quiero añadir metadata dinámica para SEO a mis páginas de producto en Next.js", "should_trigger": true},
+  {"query": "cómo configuro Google Fonts correctamente en un proyecto Vercel con Next.js?", "should_trigger": true},
+  {"query": "debo usar useEffect para fetch de datos o hay una mejor forma con el App Router de Next.js?", "should_trigger": true},
+  {"query": "how do I implement error boundaries properly in Next.js 14 with the App Router?", "should_trigger": true},
+  {"query": "quiero hacer parallel data fetching en mi página de dashboard de Next.js, cómo evito waterfall?", "should_trigger": true},
+  {"query": "cómo estructuro los route handlers en Next.js para una API REST con autenticación?", "should_trigger": true},
+  {"query": "quiero crear un componente de Accordion con sub-componentes Header y Content composables", "should_trigger": false},
+  {"query": "escribe tests para mi componente de login con React Testing Library", "should_trigger": false},
+  {"query": "hay un bug en mi componente, no re-renderiza cuando cambia el prop 'isLoading'", "should_trigger": false},
+  {"query": "planifica la arquitectura de mi nueva app React con microfrontends", "should_trigger": false},
+  {"query": "explícame cómo funciona el virtual DOM de React internamente", "should_trigger": false},
+  {"query": "cómo configuro ESLint con la config de Airbnb para React?", "should_trigger": false},
+  {"query": "refactoriza este componente de clase para convertirlo a hooks", "should_trigger": false},
+  {"query": "necesito un componente de tabla con sorting, filtering y paginación", "should_trigger": false},
+  {"query": "qué diferencia hay entre React y Svelte en términos de performance?", "should_trigger": false},
+  {"query": "cómo añado animaciones con Framer Motion a mi app React?", "should_trigger": false}
+]

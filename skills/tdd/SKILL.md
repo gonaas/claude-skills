@@ -1,9 +1,7 @@
 ---
 name: tdd
 description: |
-  Test-Driven Development. Iron Law: no production code without a failing test first.
-  Use when: writing tests, TDD, test first, implementing features, fixing bugs, hotfix.
-  Trigger on: "escribe tests", "TDD", "test first", "implementa feature", "arregla el bug", "bug fix".
+  Activate when someone is about to write code and tests must come before production code — the Red-Green-Refactor cycle. Explicit triggers: user says "TDD" or "test first"; wants tests written against a spec/interface before the implementation exists. Implicit triggers: any bug fix or hotfix (a failing test capturing the regression always comes first, even for emergencies); implementing a feature or method "correctly" or "the right way." This is a development workflow skill, not a test generator — it guides the implementation process. Skip for: testing theory questions, test framework setup, code review of existing code, and documentation tasks.
 author: Gonzalo Astudillo
 version: 1.0.0
 date: 2026-04-14

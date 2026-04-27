@@ -1,0 +1,840 @@
+{
+  "exit_reason": "max_iterations (3)",
+  "original_description": "72 Claude Code workflow tips from Boris Cherny (creator of Claude Code). PROACTIVE MODE: When the user is working on a task, check the CONTEXT MAP below and surface the most relevant tip BEFORE they ask. One tip at a time, short and actionable. Don't dump all tips \u2014 be a coach, not an encyclopedia. BROWSE MODE: When invoked with /boris, show the topic list and let the user pick. Use when: setting up Claude Code, optimizing workflows, running parallel sessions, configuring CLAUDE.md, using skills/commands, subagents, hooks, MCP integrations, worktrees, plan mode, verification, permissions, plugins, custom agents, sandboxing, keybindings, status lines, /simplify, /batch, /loop, /btw, /effort, /schedule, voice mode, remote control, auto mode, mobile app, session teleporting, Desktop app.",
+  "best_description": "72 Claude Code workflow tips from Boris Cherny (creator of Claude Code). PROACTIVE MODE: When the user is working on a task, check the CONTEXT MAP below and surface the most relevant tip BEFORE they ask. One tip at a time, short and actionable. Don't dump all tips \u2014 be a coach, not an encyclopedia. BROWSE MODE: When invoked with /boris, show the topic list and let the user pick. Use when: setting up Claude Code, optimizing workflows, running parallel sessions, configuring CLAUDE.md, using skills/commands, subagents, hooks, MCP integrations, worktrees, plan mode, verification, permissions, plugins, custom agents, sandboxing, keybindings, status lines, /simplify, /batch, /loop, /btw, /effort, /schedule, voice mode, remote control, auto mode, mobile app, session teleporting, Desktop app.",
+  "best_score": "4/8",
+  "best_train_score": "6/12",
+  "best_test_score": "4/8",
+  "final_description": "Use for any question about Claude Code itself as a tool \u2014 how a feature works, how to configure or set it up, or how to get more out of it. Prime trigger: the user mentions Claude Code, CLAUDE.md, or any Claude Code feature by name (plan mode, shift+tab, MCP servers, git worktrees, session teleporting, status line, hooks, keybindings, subagents, /loop, /schedule, voice mode, permissions, sandboxing, auto mode). The user is asking about Claude Code the development environment, not about their application code. Also invoke proactively during work \u2014 when the user edits many files, writes hooks, or runs parallel agents \u2014 surface one relevant tip before they ask.",
+  "iterations_run": 3,
+  "holdout": 0.4,
+  "train_size": 12,
+  "test_size": 8,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "72 Claude Code workflow tips from Boris Cherny (creator of Claude Code). PROACTIVE MODE: When the user is working on a task, check the CONTEXT MAP below and surface the most relevant tip BEFORE they ask. One tip at a time, short and actionable. Don't dump all tips \u2014 be a coach, not an encyclopedia. BROWSE MODE: When invoked with /boris, show the topic list and let the user pick. Use when: setting up Claude Code, optimizing workflows, running parallel sessions, configuring CLAUDE.md, using skills/commands, subagents, hooks, MCP integrations, worktrees, plan mode, verification, permissions, plugins, custom agents, sandboxing, keybindings, status lines, /simplify, /batch, /loop, /btw, /effort, /schedule, voice mode, remote control, auto mode, mobile app, session teleporting, Desktop app.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "c\u00f3mo funciona shift+tab en Claude Code y cu\u00e1ndo usar plan mode?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how do I set up MCP servers in Claude Code for my project?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo configuro el status line de Claude Code para ver informaci\u00f3n \u00fatil mientras trabaja?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero teleportar mi sesi\u00f3n de Claude Code del trabajo a casa, c\u00f3mo funciona eso?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo puedo correr m\u00faltiples instancias de Claude Code en paralelo sobre el mismo repo sin que se pisen?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero configurar mi CLAUDE.md para que Claude Code entienda mejor mi proyecto, tips?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "revisa este c\u00f3digo y dime si hay vulnerabilidades de seguridad",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en mi middleware, las requests autenticadas fallan con 403",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a la interfaz del m\u00f3dulo de notificaciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a crear un skill nuevo para automatizar mis deployments",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona la ventana de contexto de los LLMs",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo hago debug de un error de memoria en mi app Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "quiero que Claude Code no me pregunte tanto por permisos, c\u00f3mo configuro los allowed tools?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo uso git worktrees con Claude Code para trabajar en varias features a la vez?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tips para sacar m\u00e1s partido a Claude Code en proyectos grandes con muchos archivos",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo uso /loop y /schedule en Claude Code para tareas recurrentes?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar el m\u00f3dulo de pagos, c\u00f3mo lo abordamos?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe un script de bash para hacer backup de mi base de datos",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo funciona la API de Anthropic para hacer llamadas desde mi app?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "configura ESLint y Prettier en mi proyecto TypeScript",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "c\u00f3mo funciona shift+tab en Claude Code y cu\u00e1ndo usar plan mode?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how do I set up MCP servers in Claude Code for my project?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo configuro el status line de Claude Code para ver informaci\u00f3n \u00fatil mientras trabaja?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero teleportar mi sesi\u00f3n de Claude Code del trabajo a casa, c\u00f3mo funciona eso?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo puedo correr m\u00faltiples instancias de Claude Code en paralelo sobre el mismo repo sin que se pisen?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero configurar mi CLAUDE.md para que Claude Code entienda mejor mi proyecto, tips?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "revisa este c\u00f3digo y dime si hay vulnerabilidades de seguridad",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en mi middleware, las requests autenticadas fallan con 403",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a la interfaz del m\u00f3dulo de notificaciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a crear un skill nuevo para automatizar mis deployments",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona la ventana de contexto de los LLMs",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo hago debug de un error de memoria en mi app Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Use when the user asks how to use, set up, or get more out of any Claude Code feature or workflow: plan mode (shift+tab), CLAUDE.md best practices, running parallel sessions with git worktrees, MCP server configuration, status line setup, session teleporting between devices, hooks, permissions, keybindings, voice mode, subagents, custom agents, /loop, /schedule, sandboxing, and other Claude Code capabilities. Also invoke proactively while the user works \u2014 when they're editing multiple files, writing hooks, spawning subagents, or running large refactors, surface one actionable tip before they ask.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "how do I set up MCP servers in Claude Code for my project?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero teleportar mi sesi\u00f3n de Claude Code del trabajo a casa, c\u00f3mo funciona eso?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona shift+tab en Claude Code y cu\u00e1ndo usar plan mode?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo puedo correr m\u00faltiples instancias de Claude Code en paralelo sobre el mismo repo sin que se pisen?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo configuro el status line de Claude Code para ver informaci\u00f3n \u00fatil mientras trabaja?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a crear un skill nuevo para automatizar mis deployments",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa este c\u00f3digo y dime si hay vulnerabilidades de seguridad",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en mi middleware, las requests autenticadas fallan con 403",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a la interfaz del m\u00f3dulo de notificaciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero configurar mi CLAUDE.md para que Claude Code entienda mejor mi proyecto, tips?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo hago debug de un error de memoria en mi app Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona la ventana de contexto de los LLMs",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "c\u00f3mo uso git worktrees con Claude Code para trabajar en varias features a la vez?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero que Claude Code no me pregunte tanto por permisos, c\u00f3mo configuro los allowed tools?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tips para sacar m\u00e1s partido a Claude Code en proyectos grandes con muchos archivos",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo uso /loop y /schedule en Claude Code para tareas recurrentes?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona la API de Anthropic para hacer llamadas desde mi app?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "configura ESLint y Prettier en mi proyecto TypeScript",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe un script de bash para hacer backup de mi base de datos",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero implementar el m\u00f3dulo de pagos, c\u00f3mo lo abordamos?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "how do I set up MCP servers in Claude Code for my project?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero teleportar mi sesi\u00f3n de Claude Code del trabajo a casa, c\u00f3mo funciona eso?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona shift+tab en Claude Code y cu\u00e1ndo usar plan mode?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo puedo correr m\u00faltiples instancias de Claude Code en paralelo sobre el mismo repo sin que se pisen?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo configuro el status line de Claude Code para ver informaci\u00f3n \u00fatil mientras trabaja?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a crear un skill nuevo para automatizar mis deployments",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa este c\u00f3digo y dime si hay vulnerabilidades de seguridad",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en mi middleware, las requests autenticadas fallan con 403",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a la interfaz del m\u00f3dulo de notificaciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero configurar mi CLAUDE.md para que Claude Code entienda mejor mi proyecto, tips?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo hago debug de un error de memoria en mi app Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona la ventana de contexto de los LLMs",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "Use for any question about Claude Code itself as a tool \u2014 how a feature works, how to configure or set it up, or how to get more out of it. Prime trigger: the user mentions Claude Code, CLAUDE.md, or any Claude Code feature by name (plan mode, shift+tab, MCP servers, git worktrees, session teleporting, status line, hooks, keybindings, subagents, /loop, /schedule, voice mode, permissions, sandboxing, auto mode). The user is asking about Claude Code the development environment, not about their application code. Also invoke proactively during work \u2014 when the user edits many files, writes hooks, or runs parallel agents \u2014 surface one relevant tip before they ask.",
+      "train_passed": 7,
+      "train_failed": 5,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "c\u00f3mo funciona shift+tab en Claude Code y cu\u00e1ndo usar plan mode?",
+          "should_trigger": true,
+          "trigger_rate": 1.0,
+          "triggers": 1,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro el status line de Claude Code para ver informaci\u00f3n \u00fatil mientras trabaja?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero teleportar mi sesi\u00f3n de Claude Code del trabajo a casa, c\u00f3mo funciona eso?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo puedo correr m\u00faltiples instancias de Claude Code en paralelo sobre el mismo repo sin que se pisen?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how do I set up MCP servers in Claude Code for my project?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero configurar mi CLAUDE.md para que Claude Code entienda mejor mi proyecto, tips?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un bug en mi middleware, las requests autenticadas fallan con 403",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a crear un skill nuevo para automatizar mis deployments",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa este c\u00f3digo y dime si hay vulnerabilidades de seguridad",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a la interfaz del m\u00f3dulo de notificaciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo hago debug de un error de memoria en mi app Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona la ventana de contexto de los LLMs",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "quiero que Claude Code no me pregunte tanto por permisos, c\u00f3mo configuro los allowed tools?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo uso git worktrees con Claude Code para trabajar en varias features a la vez?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tips para sacar m\u00e1s partido a Claude Code en proyectos grandes con muchos archivos",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona la API de Anthropic para hacer llamadas desde mi app?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo uso /loop y /schedule en Claude Code para tareas recurrentes?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar el m\u00f3dulo de pagos, c\u00f3mo lo abordamos?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "configura ESLint y Prettier en mi proyecto TypeScript",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe un script de bash para hacer backup de mi base de datos",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 7,
+      "failed": 5,
+      "total": 12,
+      "results": [
+        {
+          "query": "c\u00f3mo funciona shift+tab en Claude Code y cu\u00e1ndo usar plan mode?",
+          "should_trigger": true,
+          "trigger_rate": 1.0,
+          "triggers": 1,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro el status line de Claude Code para ver informaci\u00f3n \u00fatil mientras trabaja?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero teleportar mi sesi\u00f3n de Claude Code del trabajo a casa, c\u00f3mo funciona eso?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo puedo correr m\u00faltiples instancias de Claude Code en paralelo sobre el mismo repo sin que se pisen?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how do I set up MCP servers in Claude Code for my project?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero configurar mi CLAUDE.md para que Claude Code entienda mejor mi proyecto, tips?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un bug en mi middleware, las requests autenticadas fallan con 403",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a crear un skill nuevo para automatizar mis deployments",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa este c\u00f3digo y dime si hay vulnerabilidades de seguridad",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a la interfaz del m\u00f3dulo de notificaciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo hago debug de un error de memoria en mi app Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona la ventana de contexto de los LLMs",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

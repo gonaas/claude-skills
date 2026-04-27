@@ -1,0 +1,840 @@
+{
+  "exit_reason": "max_iterations (3)",
+  "original_description": "React and Next.js best practices from Vercel. Server Components by default, use client at the edge. Use when: building React components, Next.js features, data fetching, routing, performance. Trigger on: \"componente React\", \"Next.js\", \"Vercel\", \"Server Component\", \"Client Component\", \"data fetching\", \"loading state\", \"metadata\", \"image\", \"font\", \"App Router\".",
+  "best_description": "React and Next.js best practices from Vercel. Server Components by default, use client at the edge. Use when: building React components, Next.js features, data fetching, routing, performance. Trigger on: \"componente React\", \"Next.js\", \"Vercel\", \"Server Component\", \"Client Component\", \"data fetching\", \"loading state\", \"metadata\", \"image\", \"font\", \"App Router\".",
+  "best_score": "4/8",
+  "best_train_score": "6/12",
+  "best_test_score": "4/8",
+  "final_description": "Use this skill when the user asks HOW TO do something specific in Next.js or the App Router: how to fetch data (instead of useEffect), configure images or fonts, add SEO metadata, decide between Server and Client Components, structure route handlers, or handle loading states with Suspense. Applies to Next.js 13+, App Router architecture, and Vercel deployment decisions. Skip for React questions that have no Next.js context \u2014 animations, testing, hooks refactors, or framework comparisons.",
+  "iterations_run": 3,
+  "holdout": 0.4,
+  "train_size": 12,
+  "test_size": 8,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "React and Next.js best practices from Vercel. Server Components by default, use client at the edge. Use when: building React components, Next.js features, data fetching, routing, performance. Trigger on: \"componente React\", \"Next.js\", \"Vercel\", \"Server Component\", \"Client Component\", \"data fetching\", \"loading state\", \"metadata\", \"image\", \"font\", \"App Router\".",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "c\u00f3mo configuro Google Fonts correctamente en un proyecto Vercel con Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "debo usar useEffect para fetch de datos o hay una mejor forma con el App Router de Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo estructuro los route handlers en Next.js para una API REST con autenticaci\u00f3n?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero a\u00f1adir metadata din\u00e1mica para SEO a mis p\u00e1ginas de producto en Next.js",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo un componente que hace fetch de la API de productos, debo marcarlo como 'use client' o dejarlo como Server Component?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo optimizo las im\u00e1genes en mi app Next.js 14? est\u00e1n tardando mucho en cargar",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe tests para mi componente de login con React Testing Library",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 diferencia hay entre React y Svelte en t\u00e9rminos de performance?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito un componente de tabla con sorting, filtering y paginaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero crear un componente de Accordion con sub-componentes Header y Content composables",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente de clase para convertirlo a hooks",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo a\u00f1ado animaciones con Framer Motion a mi app React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "how do I implement error boundaries properly in Next.js 14 with the App Router?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how should I handle loading and error states in my Next.js App Router page?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "mi p\u00e1gina de Next.js carga lento, quiero usar Server Components para mejorar el Time to First Byte",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero hacer parallel data fetching en mi p\u00e1gina de dashboard de Next.js, c\u00f3mo evito waterfall?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo configuro ESLint con la config de Airbnb para React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la arquitectura de mi nueva app React con microfrontends",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en mi componente, no re-renderiza cuando cambia el prop 'isLoading'",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona el virtual DOM de React internamente",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "c\u00f3mo configuro Google Fonts correctamente en un proyecto Vercel con Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "debo usar useEffect para fetch de datos o hay una mejor forma con el App Router de Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo estructuro los route handlers en Next.js para una API REST con autenticaci\u00f3n?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero a\u00f1adir metadata din\u00e1mica para SEO a mis p\u00e1ginas de producto en Next.js",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo un componente que hace fetch de la API de productos, debo marcarlo como 'use client' o dejarlo como Server Component?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo optimizo las im\u00e1genes en mi app Next.js 14? est\u00e1n tardando mucho en cargar",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe tests para mi componente de login con React Testing Library",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 diferencia hay entre React y Svelte en t\u00e9rminos de performance?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito un componente de tabla con sorting, filtering y paginaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero crear un componente de Accordion con sub-componentes Header y Content composables",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente de clase para convertirlo a hooks",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo a\u00f1ado animaciones con Framer Motion a mi app React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Use when a user is building a Next.js app and needs architectural guidance: whether to mark a component \"use client\" or keep it as a Server Component, how to fetch data without useEffect in the App Router, how to optimize images with next/image, load fonts with next/font, add SEO metadata, structure route handlers, or handle loading/streaming with Suspense. Also use when the user asks about Next.js 13+ / 14 App Router patterns, Vercel deployment best practices, or any decision about Server Components vs Client Components. Do NOT use for generic React questions unrelated to Next.js (animations, class-to-hooks refactors, testing), or for comparisons between frameworks.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "c\u00f3mo configuro Google Fonts correctamente en un proyecto Vercel con Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "debo usar useEffect para fetch de datos o hay una mejor forma con el App Router de Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero a\u00f1adir metadata din\u00e1mica para SEO a mis p\u00e1ginas de producto en Next.js",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo estructuro los route handlers en Next.js para una API REST con autenticaci\u00f3n?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo un componente que hace fetch de la API de productos, debo marcarlo como 'use client' o dejarlo como Server Component?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un componente de tabla con sorting, filtering y paginaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 diferencia hay entre React y Svelte en t\u00e9rminos de performance?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero crear un componente de Accordion con sub-componentes Header y Content composables",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo optimizo las im\u00e1genes en mi app Next.js 14? est\u00e1n tardando mucho en cargar",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe tests para mi componente de login con React Testing Library",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo a\u00f1ado animaciones con Framer Motion a mi app React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente de clase para convertirlo a hooks",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "how do I implement error boundaries properly in Next.js 14 with the App Router?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how should I handle loading and error states in my Next.js App Router page?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "mi p\u00e1gina de Next.js carga lento, quiero usar Server Components para mejorar el Time to First Byte",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "planifica la arquitectura de mi nueva app React con microfrontends",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero hacer parallel data fetching en mi p\u00e1gina de dashboard de Next.js, c\u00f3mo evito waterfall?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo configuro ESLint con la config de Airbnb para React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en mi componente, no re-renderiza cuando cambia el prop 'isLoading'",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona el virtual DOM de React internamente",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "c\u00f3mo configuro Google Fonts correctamente en un proyecto Vercel con Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "debo usar useEffect para fetch de datos o hay una mejor forma con el App Router de Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero a\u00f1adir metadata din\u00e1mica para SEO a mis p\u00e1ginas de producto en Next.js",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo estructuro los route handlers en Next.js para una API REST con autenticaci\u00f3n?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo un componente que hace fetch de la API de productos, debo marcarlo como 'use client' o dejarlo como Server Component?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un componente de tabla con sorting, filtering y paginaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 diferencia hay entre React y Svelte en t\u00e9rminos de performance?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero crear un componente de Accordion con sub-componentes Header y Content composables",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo optimizo las im\u00e1genes en mi app Next.js 14? est\u00e1n tardando mucho en cargar",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe tests para mi componente de login con React Testing Library",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo a\u00f1ado animaciones con Framer Motion a mi app React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente de clase para convertirlo a hooks",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "Use this skill when the user asks HOW TO do something specific in Next.js or the App Router: how to fetch data (instead of useEffect), configure images or fonts, add SEO metadata, decide between Server and Client Components, structure route handlers, or handle loading states with Suspense. Applies to Next.js 13+, App Router architecture, and Vercel deployment decisions. Skip for React questions that have no Next.js context \u2014 animations, testing, hooks refactors, or framework comparisons.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "c\u00f3mo configuro Google Fonts correctamente en un proyecto Vercel con Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "debo usar useEffect para fetch de datos o hay una mejor forma con el App Router de Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo estructuro los route handlers en Next.js para una API REST con autenticaci\u00f3n?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero a\u00f1adir metadata din\u00e1mica para SEO a mis p\u00e1ginas de producto en Next.js",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo un componente que hace fetch de la API de productos, debo marcarlo como 'use client' o dejarlo como Server Component?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo optimizo las im\u00e1genes en mi app Next.js 14? est\u00e1n tardando mucho en cargar",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "qu\u00e9 diferencia hay entre React y Svelte en t\u00e9rminos de performance?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero crear un componente de Accordion con sub-componentes Header y Content composables",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para mi componente de login con React Testing Library",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito un componente de tabla con sorting, filtering y paginaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo a\u00f1ado animaciones con Framer Motion a mi app React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente de clase para convertirlo a hooks",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "how do I implement error boundaries properly in Next.js 14 with the App Router?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how should I handle loading and error states in my Next.js App Router page?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "mi p\u00e1gina de Next.js carga lento, quiero usar Server Components para mejorar el Time to First Byte",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "planifica la arquitectura de mi nueva app React con microfrontends",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro ESLint con la config de Airbnb para React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en mi componente, no re-renderiza cuando cambia el prop 'isLoading'",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero hacer parallel data fetching en mi p\u00e1gina de dashboard de Next.js, c\u00f3mo evito waterfall?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona el virtual DOM de React internamente",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "c\u00f3mo configuro Google Fonts correctamente en un proyecto Vercel con Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "debo usar useEffect para fetch de datos o hay una mejor forma con el App Router de Next.js?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo estructuro los route handlers en Next.js para una API REST con autenticaci\u00f3n?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero a\u00f1adir metadata din\u00e1mica para SEO a mis p\u00e1ginas de producto en Next.js",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo un componente que hace fetch de la API de productos, debo marcarlo como 'use client' o dejarlo como Server Component?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo optimizo las im\u00e1genes en mi app Next.js 14? est\u00e1n tardando mucho en cargar",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "qu\u00e9 diferencia hay entre React y Svelte en t\u00e9rminos de performance?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero crear un componente de Accordion con sub-componentes Header y Content composables",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para mi componente de login con React Testing Library",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito un componente de tabla con sorting, filtering y paginaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo a\u00f1ado animaciones con Framer Motion a mi app React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente de clase para convertirlo a hooks",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

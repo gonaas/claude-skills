@@ -1,0 +1,22 @@
+[
+  {"query": "quiero añadir notificaciones push a mi app mobile, cómo lo abordo sin meterme en un rabbit hole?", "should_trigger": true},
+  {"query": "el cliente pide búsqueda en tiempo real con filtros avanzados, qué enfoque tomamos?", "should_trigger": true},
+  {"query": "nueva feature: exportar reportes a PDF y Excel, planifica cómo lo implementamos", "should_trigger": true},
+  {"query": "cómo planificamos la migración de MySQL a PostgreSQL sin downtime?", "should_trigger": true},
+  {"query": "tengo que implementar autenticación con Google OAuth, por dónde empiezo y cómo lo acoto?", "should_trigger": true},
+  {"query": "the PM wants a real-time analytics dashboard, help me shape the solution before we start coding", "should_trigger": true},
+  {"query": "necesitamos rediseñar el flujo de onboarding, hay mucho scope, ayúdame a acotarlo", "should_trigger": true},
+  {"query": "qué enfoque tomamos para añadir soporte multi-tenant a una app que no fue diseñada para eso?", "should_trigger": true},
+  {"query": "diseña la solución para el sistema de roles y permisos, antes de que empecemos a implementar", "should_trigger": true},
+  {"query": "nueva feature importante: los usuarios piden modo offline en la app, cómo lo planificamos?", "should_trigger": true},
+  {"query": "hay un bug en el módulo de pagos, los usuarios no pueden completar la compra", "should_trigger": false},
+  {"query": "implementa el endpoint POST /api/users siguiendo REST conventions", "should_trigger": false},
+  {"query": "refactoriza esta función para que sea más legible y mantenible", "should_trigger": false},
+  {"query": "diseña la interfaz TypeScript del UserRepository, explora distintas opciones", "should_trigger": false},
+  {"query": "cómo funciona React Server Components en Next.js 14?", "should_trigger": false},
+  {"query": "escribe tests para el módulo de autenticación con JWT", "should_trigger": false},
+  {"query": "revisa este PR y dame feedback sobre la arquitectura", "should_trigger": false},
+  {"query": "genera documentación OpenAPI para mi REST API", "should_trigger": false},
+  {"query": "configura el pipeline de CI/CD con GitHub Actions", "should_trigger": false},
+  {"query": "cómo optimizo esta query SQL que tarda demasiado?", "should_trigger": false}
+]

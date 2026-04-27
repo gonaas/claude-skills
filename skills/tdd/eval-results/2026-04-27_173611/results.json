@@ -1,0 +1,840 @@
+{
+  "exit_reason": "max_iterations (3)",
+  "original_description": "Test-Driven Development. Iron Law: no production code without a failing test first. Use when: writing tests, TDD, test first, implementing features, fixing bugs, hotfix. Trigger on: \"escribe tests\", \"TDD\", \"test first\", \"implementa feature\", \"arregla el bug\", \"bug fix\".",
+  "best_description": "Test-Driven Development. Iron Law: no production code without a failing test first. Use when: writing tests, TDD, test first, implementing features, fixing bugs, hotfix. Trigger on: \"escribe tests\", \"TDD\", \"test first\", \"implementa feature\", \"arregla el bug\", \"bug fix\".",
+  "best_score": "4/8",
+  "best_train_score": "6/12",
+  "best_test_score": "4/8",
+  "final_description": "Activate when someone is about to write code and tests must come before production code \u2014 the Red-Green-Refactor cycle. Explicit triggers: user says \"TDD\" or \"test first\"; wants tests written against a spec/interface before the implementation exists. Implicit triggers: any bug fix or hotfix (a failing test capturing the regression always comes first, even for emergencies); implementing a feature or method \"correctly\" or \"the right way.\" This is a development workflow skill, not a test generator \u2014 it guides the implementation process. Skip for: testing theory questions, test framework setup, code review of existing code, and documentation tasks.",
+  "iterations_run": 3,
+  "holdout": 0.4,
+  "train_size": 12,
+  "test_size": 8,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "Test-Driven Development. Iron Law: no production code without a failing test first. Use when: writing tests, TDD, test first, implementing features, fixing bugs, hotfix. Trigger on: \"escribe tests\", \"TDD\", \"test first\", \"implementa feature\", \"arregla el bug\", \"bug fix\".",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "my OrderProcessor class needs a new applyDiscount() method, let's do TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar b\u00fasqueda con filtros en mi API REST, hazlo con TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a escribir un test que capture el comportamiento del LoginRepository antes de refactorizarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un hotfix urgente para el bug de producci\u00f3n en el payment flow",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar el m\u00f3dulo de autenticaci\u00f3n en mi app Express, ay\u00fadame a hacerlo bien desde el principio",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserService antes de que lo implemente, aqu\u00ed est\u00e1 la interfaz",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame la diferencia entre unit tests e integration tests",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer un code review de este PR de autenticaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "cu\u00e1les son los mejores frameworks de testing para React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro Jest con TypeScript en un proyecto Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "genera la documentaci\u00f3n JSDoc para este m\u00f3dulo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la arquitectura del m\u00f3dulo de pagos antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "implement the password reset feature, write the failing test first",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "arregla este bug en calculateDiscount(), los tests est\u00e1n fallando con 'expected 15 but got 20'",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "I need to add a checkout feature to my e-commerce app, let's do it test-first",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo que a\u00f1adir rate limiting a mi API, empecemos por los tests",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "revisa mis tests existentes y dime si tienen buena cobertura",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza esta clase UserService para reducir el acoplamiento",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en producci\u00f3n, el servidor se cae cuando hay muchas conexiones simult\u00e1neas",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo hago mocking de m\u00f3dulos con Vitest?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "my OrderProcessor class needs a new applyDiscount() method, let's do TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar b\u00fasqueda con filtros en mi API REST, hazlo con TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a escribir un test que capture el comportamiento del LoginRepository antes de refactorizarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un hotfix urgente para el bug de producci\u00f3n en el payment flow",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar el m\u00f3dulo de autenticaci\u00f3n en mi app Express, ay\u00fadame a hacerlo bien desde el principio",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserService antes de que lo implemente, aqu\u00ed est\u00e1 la interfaz",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame la diferencia entre unit tests e integration tests",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer un code review de este PR de autenticaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "cu\u00e1les son los mejores frameworks de testing para React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro Jest con TypeScript en un proyecto Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "genera la documentaci\u00f3n JSDoc para este m\u00f3dulo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la arquitectura del m\u00f3dulo de pagos antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Invoke this skill whenever a user wants to implement any feature, method, or module using Test-Driven Development \u2014 the Red-Green-Refactor cycle where failing tests come before production code. Use for: any request that explicitly mentions TDD or test-first; writing tests for an interface, class, or spec before the implementation exists; fixing bugs or hotfixes where a failing test should capture the regression before the fix is applied; implementing something \"correctly from the start\" or \"the right way.\" Skip for general testing theory questions, test framework setup/configuration, code review, documentation, or architecture planning that doesn't involve writing code yet.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "my OrderProcessor class needs a new applyDiscount() method, let's do TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un hotfix urgente para el bug de producci\u00f3n en el payment flow",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a escribir un test que capture el comportamiento del LoginRepository antes de refactorizarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar b\u00fasqueda con filtros en mi API REST, hazlo con TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar el m\u00f3dulo de autenticaci\u00f3n en mi app Express, ay\u00fadame a hacerlo bien desde el principio",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserService antes de que lo implemente, aqu\u00ed est\u00e1 la interfaz",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame la diferencia entre unit tests e integration tests",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer un code review de este PR de autenticaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "cu\u00e1les son los mejores frameworks de testing para React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro Jest con TypeScript en un proyecto Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "genera la documentaci\u00f3n JSDoc para este m\u00f3dulo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la arquitectura del m\u00f3dulo de pagos antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "implement the password reset feature, write the failing test first",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "arregla este bug en calculateDiscount(), los tests est\u00e1n fallando con 'expected 15 but got 20'",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "I need to add a checkout feature to my e-commerce app, let's do it test-first",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo que a\u00f1adir rate limiting a mi API, empecemos por los tests",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "refactoriza esta clase UserService para reducir el acoplamiento",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa mis tests existentes y dime si tienen buena cobertura",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en producci\u00f3n, el servidor se cae cuando hay muchas conexiones simult\u00e1neas",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo hago mocking de m\u00f3dulos con Vitest?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "my OrderProcessor class needs a new applyDiscount() method, let's do TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un hotfix urgente para el bug de producci\u00f3n en el payment flow",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a escribir un test que capture el comportamiento del LoginRepository antes de refactorizarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar b\u00fasqueda con filtros en mi API REST, hazlo con TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar el m\u00f3dulo de autenticaci\u00f3n en mi app Express, ay\u00fadame a hacerlo bien desde el principio",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserService antes de que lo implemente, aqu\u00ed est\u00e1 la interfaz",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame la diferencia entre unit tests e integration tests",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer un code review de este PR de autenticaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "cu\u00e1les son los mejores frameworks de testing para React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro Jest con TypeScript en un proyecto Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "genera la documentaci\u00f3n JSDoc para este m\u00f3dulo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la arquitectura del m\u00f3dulo de pagos antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "Activate when someone is about to write code and tests must come before production code \u2014 the Red-Green-Refactor cycle. Explicit triggers: user says \"TDD\" or \"test first\"; wants tests written against a spec/interface before the implementation exists. Implicit triggers: any bug fix or hotfix (a failing test capturing the regression always comes first, even for emergencies); implementing a feature or method \"correctly\" or \"the right way.\" This is a development workflow skill, not a test generator \u2014 it guides the implementation process. Skip for: testing theory questions, test framework setup, code review of existing code, and documentation tasks.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "necesito un hotfix urgente para el bug de producci\u00f3n en el payment flow",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a escribir un test que capture el comportamiento del LoginRepository antes de refactorizarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "my OrderProcessor class needs a new applyDiscount() method, let's do TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar b\u00fasqueda con filtros en mi API REST, hazlo con TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar el m\u00f3dulo de autenticaci\u00f3n en mi app Express, ay\u00fadame a hacerlo bien desde el principio",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserService antes de que lo implemente, aqu\u00ed est\u00e1 la interfaz",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame la diferencia entre unit tests e integration tests",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "cu\u00e1les son los mejores frameworks de testing para React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer un code review de este PR de autenticaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro Jest con TypeScript en un proyecto Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "genera la documentaci\u00f3n JSDoc para este m\u00f3dulo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la arquitectura del m\u00f3dulo de pagos antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "implement the password reset feature, write the failing test first",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "arregla este bug en calculateDiscount(), los tests est\u00e1n fallando con 'expected 15 but got 20'",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "I need to add a checkout feature to my e-commerce app, let's do it test-first",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "refactoriza esta clase UserService para reducir el acoplamiento",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "tengo que a\u00f1adir rate limiting a mi API, empecemos por los tests",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "revisa mis tests existentes y dime si tienen buena cobertura",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en producci\u00f3n, el servidor se cae cuando hay muchas conexiones simult\u00e1neas",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo hago mocking de m\u00f3dulos con Vitest?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "necesito un hotfix urgente para el bug de producci\u00f3n en el payment flow",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a escribir un test que capture el comportamiento del LoginRepository antes de refactorizarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "my OrderProcessor class needs a new applyDiscount() method, let's do TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar b\u00fasqueda con filtros en mi API REST, hazlo con TDD",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero implementar el m\u00f3dulo de autenticaci\u00f3n en mi app Express, ay\u00fadame a hacerlo bien desde el principio",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserService antes de que lo implemente, aqu\u00ed est\u00e1 la interfaz",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame la diferencia entre unit tests e integration tests",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "cu\u00e1les son los mejores frameworks de testing para React?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer un code review de este PR de autenticaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro Jest con TypeScript en un proyecto Node.js?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "genera la documentaci\u00f3n JSDoc para este m\u00f3dulo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la arquitectura del m\u00f3dulo de pagos antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

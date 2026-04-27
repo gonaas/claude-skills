@@ -1,0 +1,22 @@
+[
+  {"query": "cómo puedo correr múltiples instancias de Claude Code en paralelo sobre el mismo repo sin que se pisen?", "should_trigger": true},
+  {"query": "quiero configurar mi CLAUDE.md para que Claude Code entienda mejor mi proyecto, tips?", "should_trigger": true},
+  {"query": "cómo uso git worktrees con Claude Code para trabajar en varias features a la vez?", "should_trigger": true},
+  {"query": "tips para sacar más partido a Claude Code en proyectos grandes con muchos archivos", "should_trigger": true},
+  {"query": "cómo configuro el status line de Claude Code para ver información útil mientras trabaja?", "should_trigger": true},
+  {"query": "cómo funciona shift+tab en Claude Code y cuándo usar plan mode?", "should_trigger": true},
+  {"query": "how do I set up MCP servers in Claude Code for my project?", "should_trigger": true},
+  {"query": "quiero que Claude Code no me pregunte tanto por permisos, cómo configuro los allowed tools?", "should_trigger": true},
+  {"query": "cómo uso /loop y /schedule en Claude Code para tareas recurrentes?", "should_trigger": true},
+  {"query": "quiero teleportar mi sesión de Claude Code del trabajo a casa, cómo funciona eso?", "should_trigger": true},
+  {"query": "ayúdame a crear un skill nuevo para automatizar mis deployments", "should_trigger": false},
+  {"query": "hay un bug en mi middleware, las requests autenticadas fallan con 403", "should_trigger": false},
+  {"query": "quiero implementar el módulo de pagos, cómo lo abordamos?", "should_trigger": false},
+  {"query": "cómo funciona la API de Anthropic para hacer llamadas desde mi app?", "should_trigger": false},
+  {"query": "escribe un script de bash para hacer backup de mi base de datos", "should_trigger": false},
+  {"query": "configura ESLint y Prettier en mi proyecto TypeScript", "should_trigger": false},
+  {"query": "explícame cómo funciona la ventana de contexto de los LLMs", "should_trigger": false},
+  {"query": "diseña la interfaz del módulo de notificaciones", "should_trigger": false},
+  {"query": "revisa este código y dime si hay vulnerabilidades de seguridad", "should_trigger": false},
+  {"query": "cómo hago debug de un error de memoria en mi app Node.js?", "should_trigger": false}
+]

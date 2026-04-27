@@ -1,0 +1,840 @@
+{
+  "exit_reason": "max_iterations (3)",
+  "original_description": "Compound Component pattern for composable, flexible React UI. Context + dot notation. Use when: building UI with shared implicit state, flexible slot-based APIs, design system components. Trigger on: \"compound component\", \"componente composable\", \"context UI\", \"dot notation component\", \"Card.Header\", \"flexible component API\", \"Radix-style\", \"Headless UI pattern\".",
+  "best_description": "Compound Component pattern for composable, flexible React UI. Context + dot notation. Use when: building UI with shared implicit state, flexible slot-based APIs, design system components. Trigger on: \"compound component\", \"componente composable\", \"context UI\", \"dot notation component\", \"Card.Header\", \"flexible component API\", \"Radix-style\", \"Headless UI pattern\".",
+  "best_score": "4/8",
+  "best_train_score": "6/12",
+  "best_test_score": "4/8",
+  "final_description": "Invoke when someone needs to build a React component with dot-notation sub-parts (Modal.Header, Tabs.Panel, Select.Trigger, Stepper.Step) that implicitly share state \u2014 the Compound Component pattern. Prime signals: designing sub-components that communicate without prop drilling, building composable widget APIs like Radix UI or shadcn/ui, structuring a complex UI widget where multiple independent pieces share a Context. Also use for: TypeScript dot-notation component APIs, slot-based UI components where consumers can reorder or omit parts, or any \"how do I structure X with sub-components?\" question about Accordion, Select, Modal, Tabs, Table, or Stepper.",
+  "iterations_run": 3,
+  "holdout": 0.4,
+  "train_size": 12,
+  "test_size": 8,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "Compound Component pattern for composable, flexible React UI. Context + dot notation. Use when: building UI with shared implicit state, flexible slot-based APIs, design system components. Trigger on: \"compound component\", \"componente composable\", \"context UI\", \"dot notation component\", \"Card.Header\", \"flexible component API\", \"Radix-style\", \"Headless UI pattern\".",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "necesito un Select component flexible que comparta estado impl\u00edcito entre Trigger y Options",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how do I create a composable Table component where Table.Header and Table.Row share state without prop drilling?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un componente de Stepper con Step.Label y Step.Content como sub-componentes composables",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo creo una API tipo dot notation para mis componentes de UI con TypeScript?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un componente de Tabs flexible donde el padre controle el estado, c\u00f3mo lo estructuro con Context?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un Modal con Header, Body y Footer que sean sub-componentes independientes, tipo Radix UI",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo animo la apertura y cierre de un modal con CSS transitions?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "optimiza este componente de lista grande para evitar re-renders innecesarios con React.memo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo uso useContext para pasar el usuario autenticado a componentes hijos profundamente anidados?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza estos componentes para que sean m\u00e1s reutilizables en general",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona React.memo y cu\u00e1ndo usarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo creo un custom hook useForm para manejar validaci\u00f3n de formularios?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "quiero crear componentes de formulario que compartan estado via Context, estilo Headless UI",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero hacer Card.Header, Card.Body y Card.Footer como en los design systems profesionales",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "build a compound component for my Accordion that uses dot notation like Accordion.Item and Accordion.Panel",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un bug en mi componente, el estado no se actualiza cuando cambio el prop inicial",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "implement a Dropdown where Dropdown.Trigger and Dropdown.Content communicate through shared context",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "planifica c\u00f3mo vamos a construir el design system de la app",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo hago fetch de datos en Next.js sin waterfall con Server Components?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el componente de formulario de registro de usuario",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "necesito un Select component flexible que comparta estado impl\u00edcito entre Trigger y Options",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how do I create a composable Table component where Table.Header and Table.Row share state without prop drilling?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un componente de Stepper con Step.Label y Step.Content como sub-componentes composables",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo creo una API tipo dot notation para mis componentes de UI con TypeScript?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un componente de Tabs flexible donde el padre controle el estado, c\u00f3mo lo estructuro con Context?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un Modal con Header, Body y Footer que sean sub-componentes independientes, tipo Radix UI",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo animo la apertura y cierre de un modal con CSS transitions?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "optimiza este componente de lista grande para evitar re-renders innecesarios con React.memo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo uso useContext para pasar el usuario autenticado a componentes hijos profundamente anidados?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza estos componentes para que sean m\u00e1s reutilizables en general",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona React.memo y cu\u00e1ndo usarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo creo un custom hook useForm para manejar validaci\u00f3n de formularios?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Use this skill when building React components whose sub-parts need to share implicit state without prop drilling \u2014 e.g., a Modal where Header, Body, and Footer are independent sub-components, a Tabs where parent controls active state, a Select where Trigger and Options communicate silently. This is the Compound Component pattern: Context + dot notation (Component.SubPart). Reach for it when: designing a flexible slot-based component API, letting consumers compose and reorder sub-parts freely, or building in the style of Radix UI / Headless UI. Skip it for simple components with no shared state between parts or fixed single-structure layouts.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "necesito un componente de Stepper con Step.Label y Step.Content como sub-componentes composables",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un Select component flexible que comparta estado impl\u00edcito entre Trigger y Options",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how do I create a composable Table component where Table.Header and Table.Row share state without prop drilling?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un componente de Tabs flexible donde el padre controle el estado, c\u00f3mo lo estructuro con Context?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo creo una API tipo dot notation para mis componentes de UI con TypeScript?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un Modal con Header, Body y Footer que sean sub-componentes independientes, tipo Radix UI",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "optimiza este componente de lista grande para evitar re-renders innecesarios con React.memo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo animo la apertura y cierre de un modal con CSS transitions?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo uso useContext para pasar el usuario autenticado a componentes hijos profundamente anidados?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza estos componentes para que sean m\u00e1s reutilizables en general",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo creo un custom hook useForm para manejar validaci\u00f3n de formularios?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona React.memo y cu\u00e1ndo usarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "quiero crear componentes de formulario que compartan estado via Context, estilo Headless UI",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero hacer Card.Header, Card.Body y Card.Footer como en los design systems profesionales",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "build a compound component for my Accordion that uses dot notation like Accordion.Item and Accordion.Panel",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "planifica c\u00f3mo vamos a construir el design system de la app",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "implement a Dropdown where Dropdown.Trigger and Dropdown.Content communicate through shared context",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un bug en mi componente, el estado no se actualiza cuando cambio el prop inicial",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo hago fetch de datos en Next.js sin waterfall con Server Components?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el componente de formulario de registro de usuario",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "necesito un componente de Stepper con Step.Label y Step.Content como sub-componentes composables",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un Select component flexible que comparta estado impl\u00edcito entre Trigger y Options",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "how do I create a composable Table component where Table.Header and Table.Row share state without prop drilling?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un componente de Tabs flexible donde el padre controle el estado, c\u00f3mo lo estructuro con Context?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo creo una API tipo dot notation para mis componentes de UI con TypeScript?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un Modal con Header, Body y Footer que sean sub-componentes independientes, tipo Radix UI",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "optimiza este componente de lista grande para evitar re-renders innecesarios con React.memo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo animo la apertura y cierre de un modal con CSS transitions?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo uso useContext para pasar el usuario autenticado a componentes hijos profundamente anidados?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza estos componentes para que sean m\u00e1s reutilizables en general",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo creo un custom hook useForm para manejar validaci\u00f3n de formularios?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona React.memo y cu\u00e1ndo usarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "Invoke when someone needs to build a React component with dot-notation sub-parts (Modal.Header, Tabs.Panel, Select.Trigger, Stepper.Step) that implicitly share state \u2014 the Compound Component pattern. Prime signals: designing sub-components that communicate without prop drilling, building composable widget APIs like Radix UI or shadcn/ui, structuring a complex UI widget where multiple independent pieces share a Context. Also use for: TypeScript dot-notation component APIs, slot-based UI components where consumers can reorder or omit parts, or any \"how do I structure X with sub-components?\" question about Accordion, Select, Modal, Tabs, Table, or Stepper.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "how do I create a composable Table component where Table.Header and Table.Row share state without prop drilling?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo creo una API tipo dot notation para mis componentes de UI con TypeScript?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un componente de Stepper con Step.Label y Step.Content como sub-componentes composables",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un componente de Tabs flexible donde el padre controle el estado, c\u00f3mo lo estructuro con Context?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un Select component flexible que comparta estado impl\u00edcito entre Trigger y Options",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "optimiza este componente de lista grande para evitar re-renders innecesarios con React.memo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo animo la apertura y cierre de un modal con CSS transitions?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza estos componentes para que sean m\u00e1s reutilizables en general",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito un Modal con Header, Body y Footer que sean sub-componentes independientes, tipo Radix UI",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo uso useContext para pasar el usuario autenticado a componentes hijos profundamente anidados?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo creo un custom hook useForm para manejar validaci\u00f3n de formularios?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona React.memo y cu\u00e1ndo usarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "quiero hacer Card.Header, Card.Body y Card.Footer como en los design systems profesionales",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear componentes de formulario que compartan estado via Context, estilo Headless UI",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "build a compound component for my Accordion that uses dot notation like Accordion.Item and Accordion.Panel",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo hago fetch de datos en Next.js sin waterfall con Server Components?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en mi componente, el estado no se actualiza cuando cambio el prop inicial",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "implement a Dropdown where Dropdown.Trigger and Dropdown.Content communicate through shared context",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "planifica c\u00f3mo vamos a construir el design system de la app",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el componente de formulario de registro de usuario",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "how do I create a composable Table component where Table.Header and Table.Row share state without prop drilling?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo creo una API tipo dot notation para mis componentes de UI con TypeScript?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un componente de Stepper con Step.Label y Step.Content como sub-componentes composables",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un componente de Tabs flexible donde el padre controle el estado, c\u00f3mo lo estructuro con Context?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un Select component flexible que comparta estado impl\u00edcito entre Trigger y Options",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "optimiza este componente de lista grande para evitar re-renders innecesarios con React.memo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo animo la apertura y cierre de un modal con CSS transitions?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza estos componentes para que sean m\u00e1s reutilizables en general",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito un Modal con Header, Body y Footer que sean sub-componentes independientes, tipo Radix UI",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo uso useContext para pasar el usuario autenticado a componentes hijos profundamente anidados?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo creo un custom hook useForm para manejar validaci\u00f3n de formularios?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona React.memo y cu\u00e1ndo usarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

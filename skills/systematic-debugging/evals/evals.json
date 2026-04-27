@@ -1,0 +1,22 @@
+[
+  {"query": "mi API devuelve 500 intermitentemente pero no entiendo por qué, aquí está el stacktrace", "should_trigger": true},
+  {"query": "este componente React no renderiza los datos, he probado mil cosas y sigue igual", "should_trigger": true},
+  {"query": "TypeError: Cannot read property 'userId' of undefined — no sé en qué parte del código está fallando", "should_trigger": true},
+  {"query": "el login funciona en local pero falla en staging con error 401, misma configuración", "should_trigger": true},
+  {"query": "ECONNREFUSED al conectar con Redis en producción, en local todo bien", "should_trigger": true},
+  {"query": "el test de integración pasaba ayer y hoy falla sin que yo haya tocado nada", "should_trigger": true},
+  {"query": "investiga por qué el endpoint /api/orders tarda 8 segundos en responder", "should_trigger": true},
+  {"query": "users are randomly getting logged out, can't reproduce it consistently", "should_trigger": true},
+  {"query": "no funciona el flujo de checkout, el pago se procesa pero el pedido no se crea", "should_trigger": true},
+  {"query": "memory leak en mi servidor Node, el uso de RAM sube hasta que se cae", "should_trigger": true},
+  {"query": "escribe tests para el módulo de autenticación antes de implementarlo", "should_trigger": false},
+  {"query": "quiero refactorizar esta clase para que sea más testeable", "should_trigger": false},
+  {"query": "planifica la implementación del sistema de notificaciones", "should_trigger": false},
+  {"query": "cómo funciona el event loop de Node.js internamente?", "should_trigger": false},
+  {"query": "diseña la interfaz del servicio de pagos, quiero explorar opciones", "should_trigger": false},
+  {"query": "cómo configuro ESLint con TypeScript en mi proyecto?", "should_trigger": false},
+  {"query": "ayúdame a hacer code review de este PR", "should_trigger": false},
+  {"query": "necesito añadir logging estructurado a mi aplicación", "should_trigger": false},
+  {"query": "explícame cómo funciona JWT authentication", "should_trigger": false},
+  {"query": "nueva feature: los usuarios quieren exportar sus datos en PDF", "should_trigger": false}
+]

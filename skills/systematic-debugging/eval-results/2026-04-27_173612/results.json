@@ -1,0 +1,840 @@
+{
+  "exit_reason": "max_iterations (3)",
+  "original_description": "Systematic debugging methodology. Iron Law: NO FIXES WITHOUT REPRODUCTION FIRST. Use when: debugging, bug won't reproduce, error investigation, \"no funciona\", \"falla\", \"error\". Trigger on: \"bug\", \"debug\", \"no funciona\", \"error\", \"falla\", \"se rompe\", \"investigate\".",
+  "best_description": "Systematic debugging methodology. Iron Law: NO FIXES WITHOUT REPRODUCTION FIRST. Use when: debugging, bug won't reproduce, error investigation, \"no funciona\", \"falla\", \"error\". Trigger on: \"bug\", \"debug\", \"no funciona\", \"error\", \"falla\", \"se rompe\", \"investigate\".",
+  "best_score": "4/8",
+  "best_train_score": "6/12",
+  "best_test_score": "4/8",
+  "final_description": "Invoke when the user faces a broken or misbehaving system and doesn't know the root cause yet. Classic triggers: a service throws 500s or crashes, an endpoint is slow or times out, memory keeps growing, a test or feature that worked yesterday now fails, something works locally but breaks in production, a component doesn't render or behave as expected despite attempted fixes. Also invoke when the user explicitly says they've tried multiple things and it still doesn't work \u2014 that's the clearest signal. Provides structured root-cause methodology: reproduce first, trace backward from the symptom, hypothesize once, verify. Skip for: new feature requests, proactive refactoring, writing tests upfront, code review, or pure explanations.",
+  "iterations_run": 3,
+  "holdout": 0.4,
+  "train_size": 12,
+  "test_size": 8,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "Systematic debugging methodology. Iron Law: NO FIXES WITHOUT REPRODUCTION FIRST. Use when: debugging, bug won't reproduce, error investigation, \"no funciona\", \"falla\", \"error\". Trigger on: \"bug\", \"debug\", \"no funciona\", \"error\", \"falla\", \"se rompe\", \"investigate\".",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "mi API devuelve 500 intermitentemente pero no entiendo por qu\u00e9, aqu\u00ed est\u00e1 el stacktrace",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ECONNREFUSED al conectar con Redis en producci\u00f3n, en local todo bien",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "memory leak en mi servidor Node, el uso de RAM sube hasta que se cae",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "investiga por qu\u00e9 el endpoint /api/orders tarda 8 segundos en responder",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el test de integraci\u00f3n pasaba ayer y hoy falla sin que yo haya tocado nada",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "este componente React no renderiza los datos, he probado mil cosas y sigue igual",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero refactorizar esta clase para que sea m\u00e1s testeable",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona JWT authentication",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito a\u00f1adir logging estructurado a mi aplicaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el m\u00f3dulo de autenticaci\u00f3n antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer code review de este PR",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "nueva feature: los usuarios quieren exportar sus datos en PDF",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "users are randomly getting logged out, can't reproduce it consistently",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el login funciona en local pero falla en staging con error 401, misma configuraci\u00f3n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "TypeError: Cannot read property 'userId' of undefined \u2014 no s\u00e9 en qu\u00e9 parte del c\u00f3digo est\u00e1 fallando",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "no funciona el flujo de checkout, el pago se procesa pero el pedido no se crea",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona el event loop de Node.js internamente?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro ESLint con TypeScript en mi proyecto?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la implementaci\u00f3n del sistema de notificaciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a la interfaz del servicio de pagos, quiero explorar opciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "mi API devuelve 500 intermitentemente pero no entiendo por qu\u00e9, aqu\u00ed est\u00e1 el stacktrace",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ECONNREFUSED al conectar con Redis en producci\u00f3n, en local todo bien",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "memory leak en mi servidor Node, el uso de RAM sube hasta que se cae",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "investiga por qu\u00e9 el endpoint /api/orders tarda 8 segundos en responder",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el test de integraci\u00f3n pasaba ayer y hoy falla sin que yo haya tocado nada",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "este componente React no renderiza los datos, he probado mil cosas y sigue igual",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero refactorizar esta clase para que sea m\u00e1s testeable",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona JWT authentication",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito a\u00f1adir logging estructurado a mi aplicaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el m\u00f3dulo de autenticaci\u00f3n antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer code review de este PR",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "nueva feature: los usuarios quieren exportar sus datos en PDF",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Use when a user is investigating why something is broken, slow, crashing, or behaving unexpectedly \u2014 especially when they don't know the root cause yet. Apply to: production exceptions and stack traces, regressions (worked before, fails now), environment-specific failures (works locally, fails in prod), performance degradation (slowness, memory leaks, timeouts), components or endpoints not behaving as expected, and any situation where someone describes a symptom they can observe but can't explain. Distinctive signal: user is stuck trying to understand WHY something is happening, not just what to build next.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "memory leak en mi servidor Node, el uso de RAM sube hasta que se cae",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "investiga por qu\u00e9 el endpoint /api/orders tarda 8 segundos en responder",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el test de integraci\u00f3n pasaba ayer y hoy falla sin que yo haya tocado nada",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ECONNREFUSED al conectar con Redis en producci\u00f3n, en local todo bien",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "mi API devuelve 500 intermitentemente pero no entiendo por qu\u00e9, aqu\u00ed est\u00e1 el stacktrace",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona JWT authentication",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "este componente React no renderiza los datos, he probado mil cosas y sigue igual",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero refactorizar esta clase para que sea m\u00e1s testeable",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito a\u00f1adir logging estructurado a mi aplicaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el m\u00f3dulo de autenticaci\u00f3n antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "nueva feature: los usuarios quieren exportar sus datos en PDF",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer code review de este PR",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "users are randomly getting logged out, can't reproduce it consistently",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el login funciona en local pero falla en staging con error 401, misma configuraci\u00f3n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "TypeError: Cannot read property 'userId' of undefined \u2014 no s\u00e9 en qu\u00e9 parte del c\u00f3digo est\u00e1 fallando",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona el event loop de Node.js internamente?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro ESLint con TypeScript en mi proyecto?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "no funciona el flujo de checkout, el pago se procesa pero el pedido no se crea",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "planifica la implementaci\u00f3n del sistema de notificaciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a la interfaz del servicio de pagos, quiero explorar opciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "memory leak en mi servidor Node, el uso de RAM sube hasta que se cae",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "investiga por qu\u00e9 el endpoint /api/orders tarda 8 segundos en responder",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el test de integraci\u00f3n pasaba ayer y hoy falla sin que yo haya tocado nada",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ECONNREFUSED al conectar con Redis en producci\u00f3n, en local todo bien",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "mi API devuelve 500 intermitentemente pero no entiendo por qu\u00e9, aqu\u00ed est\u00e1 el stacktrace",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona JWT authentication",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "este componente React no renderiza los datos, he probado mil cosas y sigue igual",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero refactorizar esta clase para que sea m\u00e1s testeable",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito a\u00f1adir logging estructurado a mi aplicaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el m\u00f3dulo de autenticaci\u00f3n antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "nueva feature: los usuarios quieren exportar sus datos en PDF",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a hacer code review de este PR",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "Invoke when the user faces a broken or misbehaving system and doesn't know the root cause yet. Classic triggers: a service throws 500s or crashes, an endpoint is slow or times out, memory keeps growing, a test or feature that worked yesterday now fails, something works locally but breaks in production, a component doesn't render or behave as expected despite attempted fixes. Also invoke when the user explicitly says they've tried multiple things and it still doesn't work \u2014 that's the clearest signal. Provides structured root-cause methodology: reproduce first, trace backward from the symptom, hypothesize once, verify. Skip for: new feature requests, proactive refactoring, writing tests upfront, code review, or pure explanations.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "investiga por qu\u00e9 el endpoint /api/orders tarda 8 segundos en responder",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el test de integraci\u00f3n pasaba ayer y hoy falla sin que yo haya tocado nada",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "memory leak en mi servidor Node, el uso de RAM sube hasta que se cae",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ECONNREFUSED al conectar con Redis en producci\u00f3n, en local todo bien",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "mi API devuelve 500 intermitentemente pero no entiendo por qu\u00e9, aqu\u00ed est\u00e1 el stacktrace",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona JWT authentication",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero refactorizar esta clase para que sea m\u00e1s testeable",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito a\u00f1adir logging estructurado a mi aplicaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el m\u00f3dulo de autenticaci\u00f3n antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "este componente React no renderiza los datos, he probado mil cosas y sigue igual",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a hacer code review de este PR",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "nueva feature: los usuarios quieren exportar sus datos en PDF",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "users are randomly getting logged out, can't reproduce it consistently",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el login funciona en local pero falla en staging con error 401, misma configuraci\u00f3n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "TypeError: Cannot read property 'userId' of undefined \u2014 no s\u00e9 en qu\u00e9 parte del c\u00f3digo est\u00e1 fallando",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a la interfaz del servicio de pagos, quiero explorar opciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la implementaci\u00f3n del sistema de notificaciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro ESLint con TypeScript en mi proyecto?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "no funciona el flujo de checkout, el pago se procesa pero el pedido no se crea",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona el event loop de Node.js internamente?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "investiga por qu\u00e9 el endpoint /api/orders tarda 8 segundos en responder",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el test de integraci\u00f3n pasaba ayer y hoy falla sin que yo haya tocado nada",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "memory leak en mi servidor Node, el uso de RAM sube hasta que se cae",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ECONNREFUSED al conectar con Redis en producci\u00f3n, en local todo bien",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "mi API devuelve 500 intermitentemente pero no entiendo por qu\u00e9, aqu\u00ed est\u00e1 el stacktrace",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "expl\u00edcame c\u00f3mo funciona JWT authentication",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "quiero refactorizar esta clase para que sea m\u00e1s testeable",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "necesito a\u00f1adir logging estructurado a mi aplicaci\u00f3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el m\u00f3dulo de autenticaci\u00f3n antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "este componente React no renderiza los datos, he probado mil cosas y sigue igual",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a hacer code review de este PR",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "nueva feature: los usuarios quieren exportar sus datos en PDF",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,16 +1,7 @@
 ---
 name: boris
 description: |
-  72 Claude Code workflow tips from Boris Cherny (creator of Claude Code).
-  PROACTIVE MODE: When the user is working on a task, check the CONTEXT MAP
-  below and surface the most relevant tip BEFORE they ask. One tip at a time,
-  short and actionable. Don't dump all tips — be a coach, not an encyclopedia.
-  BROWSE MODE: When invoked with /boris, show the topic list and let the user pick.
-  Use when: setting up Claude Code, optimizing workflows, running parallel sessions,
-  configuring CLAUDE.md, using skills/commands, subagents, hooks, MCP integrations,
-  worktrees, plan mode, verification, permissions, plugins, custom agents, sandboxing,
-  keybindings, status lines, /simplify, /batch, /loop, /btw, /effort, /schedule,
-  voice mode, remote control, auto mode, mobile app, session teleporting, Desktop app.
+  Use for any question about Claude Code itself as a tool — how a feature works, how to configure or set it up, or how to get more out of it. Prime trigger: the user mentions Claude Code, CLAUDE.md, or any Claude Code feature by name (plan mode, shift+tab, MCP servers, git worktrees, session teleporting, status line, hooks, keybindings, subagents, /loop, /schedule, voice mode, permissions, sandboxing, auto mode). The user is asking about Claude Code the development environment, not about their application code. Also invoke proactively during work — when the user edits many files, writes hooks, or runs parallel agents — surface one relevant tip before they ask.
 author: Boris Cherny (tips)
 compiled-by: "@CarolinaCherry"
 version: 5.0.0
@@ -906,7 +897,8 @@ Custom agents are a powerful primitive that often gets overlooked. Define a new 
 # .claude/agents/ReadOnly.md
 ---
 name: ReadOnly
-description: Read-only agent restricted to the Read tool only
+description: |
+  Use for any question about Claude Code itself as a tool — how a feature works, how to configure or set it up, or how to get more out of it. Prime trigger: the user mentions Claude Code, CLAUDE.md, or any Claude Code feature by name (plan mode, shift+tab, MCP servers, git worktrees, session teleporting, status line, hooks, keybindings, subagents, /loop, /schedule, voice mode, permissions, sandboxing, auto mode). The user is asking about Claude Code the development environment, not about their application code. Also invoke proactively during work — when the user edits many files, writes hooks, or runs parallel agents — surface one relevant tip before they ask.
 color: blue
 tools: Read
 ---

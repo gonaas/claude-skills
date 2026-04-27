@@ -1,0 +1,840 @@
+{
+  "exit_reason": "max_iterations (3)",
+  "original_description": "\"Design It Twice\" methodology for APIs, modules, and contracts. Launches parallel sub-agents with opposing constraints to explore radically different designs before committing to one. Use when: designing an API, module interface, data contract, or any public-facing surface. Trigger on: \"dise\u00f1a la interfaz\", \"c\u00f3mo deber\u00eda ser X\", \"qu\u00e9 API usar\", \"dise\u00f1a el contrato\", \"design an interface\", \"design the API\", \"what should the interface look like\".",
+  "best_description": "\"Design It Twice\" methodology for APIs, modules, and contracts. Launches parallel sub-agents with opposing constraints to explore radically different designs before committing to one. Use when: designing an API, module interface, data contract, or any public-facing surface. Trigger on: \"dise\u00f1a la interfaz\", \"c\u00f3mo deber\u00eda ser X\", \"qu\u00e9 API usar\", \"dise\u00f1a el contrato\", \"design an interface\", \"design the API\", \"what should the interface look like\".",
+  "best_score": "4/8",
+  "best_train_score": "6/12",
+  "best_test_score": "4/8",
+  "final_description": "Use when a user is designing \u2014 not implementing \u2014 an API, interface, module contract, hook, or SDK surface and is undecided about which shape to use. Prime signals: wanting to explore multiple design options before coding, asking which pattern to choose (callbacks vs events, builder vs factory), expressing uncertainty about the interface shape, or explicitly requesting alternatives to compare before committing. Generates three parallel designs with opposing constraints (minimal, flexible, ergonomic) and recommends one. Skip when the interface shape is already decided and the task is implementation, testing, debugging, or code review.",
+  "iterations_run": 3,
+  "holdout": 0.4,
+  "train_size": 12,
+  "test_size": 8,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "\"Design It Twice\" methodology for APIs, modules, and contracts. Launches parallel sub-agents with opposing constraints to explore radically different designs before committing to one. Use when: designing an API, module interface, data contract, or any public-facing surface. Trigger on: \"dise\u00f1a la interfaz\", \"c\u00f3mo deber\u00eda ser X\", \"qu\u00e9 API usar\", \"dise\u00f1a el contrato\", \"design an interface\", \"design the API\", \"what should the interface look like\".",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "necesito dise\u00f1ar la API de mi librer\u00eda de validaci\u00f3n antes de implementarla, explora varias opciones",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "voy a crear un SDK p\u00fablico para mi API, ay\u00fadame a dise\u00f1ar la interfaz que ver\u00e1n los desarrolladores",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a la interfaz TypeScript del servicio de notificaciones, no s\u00e9 si usar callbacks, eventos o promesas",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo que definir la interfaz del m\u00f3dulo de autenticaci\u00f3n, explora conmigo builder pattern vs factory vs directo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a el contrato del UserRepository, quiero ver distintas opciones antes de implementarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo deber\u00eda ser la API del hook useAuth? tengo varias ideas pero no s\u00e9 cu\u00e1l es mejor",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserRepository antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "configura webpack con code splitting para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la implementaci\u00f3n del m\u00f3dulo de notificaciones para los pr\u00f3ximos dos sprints",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa si esta implementaci\u00f3n del repositorio sigue los principios SOLID",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "crea un componente React para mostrar el perfil de usuario",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo implemento dependency injection en Node.js sin un framework?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "design the API for my event bus system, considering push vs pull vs hybrid approaches",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "need to design the interface for my payment processor module, want to explore 2-3 different approaches before committing",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "what should the contract look like for my caching layer? thinking about method-based vs decorator-based",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "refactoriza esta clase para reducir el acoplamiento entre m\u00f3dulos",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un bug en mi cliente HTTP, las requests se duplican en retry",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo funciona TypeScript conditional types con generics?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo deber\u00eda ser la interfaz del cliente HTTP? quiero algo ergon\u00f3mico que oculte la complejidad",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a el schema de base de datos para el m\u00f3dulo de usuarios y roles",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "necesito dise\u00f1ar la API de mi librer\u00eda de validaci\u00f3n antes de implementarla, explora varias opciones",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "voy a crear un SDK p\u00fablico para mi API, ay\u00fadame a dise\u00f1ar la interfaz que ver\u00e1n los desarrolladores",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a la interfaz TypeScript del servicio de notificaciones, no s\u00e9 si usar callbacks, eventos o promesas",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo que definir la interfaz del m\u00f3dulo de autenticaci\u00f3n, explora conmigo builder pattern vs factory vs directo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a el contrato del UserRepository, quiero ver distintas opciones antes de implementarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo deber\u00eda ser la API del hook useAuth? tengo varias ideas pero no s\u00e9 cu\u00e1l es mejor",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserRepository antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "configura webpack con code splitting para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la implementaci\u00f3n del m\u00f3dulo de notificaciones para los pr\u00f3ximos dos sprints",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa si esta implementaci\u00f3n del repositorio sigue los principios SOLID",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "crea un componente React para mostrar el perfil de usuario",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo implemento dependency injection en Node.js sin un framework?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Invoke when the user needs to choose between competing interface designs before writing code. Use for: APIs, SDKs, TypeScript interfaces, repository contracts, hooks, or any public module surface where the shape is still undecided. Key signals: comparing patterns (builder vs factory, callbacks vs promises vs events), wanting multiple options before committing, asking \"how should this API look\", \"I have several ideas but don't know which is better\", \"explore options with me before I implement\". Generates three parallel designs with opposing constraints \u2014 minimal surface, maximum flexibility, golden-path ergonomics \u2014 then compares and recommends. Skip when: design is already decided, the task is implementing/debugging/testing/reviewing code, or the question is about internal logic rather than public interface shape.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "voy a crear un SDK p\u00fablico para mi API, ay\u00fadame a dise\u00f1ar la interfaz que ver\u00e1n los desarrolladores",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo que definir la interfaz del m\u00f3dulo de autenticaci\u00f3n, explora conmigo builder pattern vs factory vs directo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito dise\u00f1ar la API de mi librer\u00eda de validaci\u00f3n antes de implementarla, explora varias opciones",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a el contrato del UserRepository, quiero ver distintas opciones antes de implementarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a la interfaz TypeScript del servicio de notificaciones, no s\u00e9 si usar callbacks, eventos o promesas",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "revisa si esta implementaci\u00f3n del repositorio sigue los principios SOLID",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo deber\u00eda ser la API del hook useAuth? tengo varias ideas pero no s\u00e9 cu\u00e1l es mejor",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserRepository antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "configura webpack con code splitting para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la implementaci\u00f3n del m\u00f3dulo de notificaciones para los pr\u00f3ximos dos sprints",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo implemento dependency injection en Node.js sin un framework?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "crea un componente React para mostrar el perfil de usuario",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "what should the contract look like for my caching layer? thinking about method-based vs decorator-based",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "design the API for my event bus system, considering push vs pull vs hybrid approaches",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "need to design the interface for my payment processor module, want to explore 2-3 different approaches before committing",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo deber\u00eda ser la interfaz del cliente HTTP? quiero algo ergon\u00f3mico que oculte la complejidad",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un bug en mi cliente HTTP, las requests se duplican en retry",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo funciona TypeScript conditional types con generics?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza esta clase para reducir el acoplamiento entre m\u00f3dulos",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a el schema de base de datos para el m\u00f3dulo de usuarios y roles",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "voy a crear un SDK p\u00fablico para mi API, ay\u00fadame a dise\u00f1ar la interfaz que ver\u00e1n los desarrolladores",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo que definir la interfaz del m\u00f3dulo de autenticaci\u00f3n, explora conmigo builder pattern vs factory vs directo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito dise\u00f1ar la API de mi librer\u00eda de validaci\u00f3n antes de implementarla, explora varias opciones",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a el contrato del UserRepository, quiero ver distintas opciones antes de implementarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a la interfaz TypeScript del servicio de notificaciones, no s\u00e9 si usar callbacks, eventos o promesas",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "revisa si esta implementaci\u00f3n del repositorio sigue los principios SOLID",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo deber\u00eda ser la API del hook useAuth? tengo varias ideas pero no s\u00e9 cu\u00e1l es mejor",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "escribe los tests para el UserRepository antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "configura webpack con code splitting para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la implementaci\u00f3n del m\u00f3dulo de notificaciones para los pr\u00f3ximos dos sprints",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo implemento dependency injection en Node.js sin un framework?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "crea un componente React para mostrar el perfil de usuario",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "Use when a user is designing \u2014 not implementing \u2014 an API, interface, module contract, hook, or SDK surface and is undecided about which shape to use. Prime signals: wanting to explore multiple design options before coding, asking which pattern to choose (callbacks vs events, builder vs factory), expressing uncertainty about the interface shape, or explicitly requesting alternatives to compare before committing. Generates three parallel designs with opposing constraints (minimal, flexible, ergonomic) and recommends one. Skip when the interface shape is already decided and the task is implementation, testing, debugging, or code review.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "necesito dise\u00f1ar la API de mi librer\u00eda de validaci\u00f3n antes de implementarla, explora varias opciones",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo que definir la interfaz del m\u00f3dulo de autenticaci\u00f3n, explora conmigo builder pattern vs factory vs directo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "voy a crear un SDK p\u00fablico para mi API, ay\u00fadame a dise\u00f1ar la interfaz que ver\u00e1n los desarrolladores",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a el contrato del UserRepository, quiero ver distintas opciones antes de implementarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a la interfaz TypeScript del servicio de notificaciones, no s\u00e9 si usar callbacks, eventos o promesas",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo deber\u00eda ser la API del hook useAuth? tengo varias ideas pero no s\u00e9 cu\u00e1l es mejor",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "revisa si esta implementaci\u00f3n del repositorio sigue los principios SOLID",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la implementaci\u00f3n del m\u00f3dulo de notificaciones para los pr\u00f3ximos dos sprints",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "configura webpack con code splitting para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe los tests para el UserRepository antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo implemento dependency injection en Node.js sin un framework?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "crea un componente React para mostrar el perfil de usuario",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "design the API for my event bus system, considering push vs pull vs hybrid approaches",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "what should the contract look like for my caching layer? thinking about method-based vs decorator-based",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "need to design the interface for my payment processor module, want to explore 2-3 different approaches before committing",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un bug en mi cliente HTTP, las requests se duplican en retry",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo deber\u00eda ser la interfaz del cliente HTTP? quiero algo ergon\u00f3mico que oculte la complejidad",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona TypeScript conditional types con generics?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza esta clase para reducir el acoplamiento entre m\u00f3dulos",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a el schema de base de datos para el m\u00f3dulo de usuarios y roles",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "necesito dise\u00f1ar la API de mi librer\u00eda de validaci\u00f3n antes de implementarla, explora varias opciones",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "tengo que definir la interfaz del m\u00f3dulo de autenticaci\u00f3n, explora conmigo builder pattern vs factory vs directo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "voy a crear un SDK p\u00fablico para mi API, ay\u00fadame a dise\u00f1ar la interfaz que ver\u00e1n los desarrolladores",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a el contrato del UserRepository, quiero ver distintas opciones antes de implementarlo",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a la interfaz TypeScript del servicio de notificaciones, no s\u00e9 si usar callbacks, eventos o promesas",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo deber\u00eda ser la API del hook useAuth? tengo varias ideas pero no s\u00e9 cu\u00e1l es mejor",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "revisa si esta implementaci\u00f3n del repositorio sigue los principios SOLID",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "planifica la implementaci\u00f3n del m\u00f3dulo de notificaciones para los pr\u00f3ximos dos sprints",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "configura webpack con code splitting para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe los tests para el UserRepository antes de implementarlo",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo implemento dependency injection en Node.js sin un framework?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "crea un componente React para mostrar el perfil de usuario",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

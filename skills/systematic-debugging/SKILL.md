@@ -1,9 +1,7 @@
 ---
 name: systematic-debugging
 description: |
-  Systematic debugging methodology. Iron Law: NO FIXES WITHOUT REPRODUCTION FIRST.
-  Use when: debugging, bug won't reproduce, error investigation, "no funciona", "falla", "error".
-  Trigger on: "bug", "debug", "no funciona", "error", "falla", "se rompe", "investigate".
+  Invoke when the user faces a broken or misbehaving system and doesn't know the root cause yet. Classic triggers: a service throws 500s or crashes, an endpoint is slow or times out, memory keeps growing, a test or feature that worked yesterday now fails, something works locally but breaks in production, a component doesn't render or behave as expected despite attempted fixes. Also invoke when the user explicitly says they've tried multiple things and it still doesn't work — that's the clearest signal. Provides structured root-cause methodology: reproduce first, trace backward from the symptom, hypothesize once, verify. Skip for: new feature requests, proactive refactoring, writing tests upfront, code review, or pure explanations.
 author: Gonzalo Astudillo
 version: 1.1.0
 date: 2026-04-14

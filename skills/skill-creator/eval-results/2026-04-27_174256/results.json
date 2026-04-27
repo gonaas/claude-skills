@@ -1,0 +1,840 @@
+{
+  "exit_reason": "max_iterations (3)",
+  "original_description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+  "best_description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+  "best_score": "4/8",
+  "best_train_score": "6/12",
+  "best_test_score": "4/8",
+  "final_description": "Invoke this skill immediately when the user wants to: create a new Claude Code skill for any purpose, convert a workflow or conversation into a reusable skill, edit or improve an existing skill, run evals or benchmark skill performance, compare skill versions, or optimize skill triggering. This applies whether the user says \"make a skill\", \"turn this into a skill\", \"I need a skill for X\", or any variation in any language. Do not attempt skill creation, evaluation, or optimization without this skill \u2014 it provides the full methodology, eval scripts, and review tooling you need.",
+  "iterations_run": 3,
+  "holdout": 0.4,
+  "train_size": 12,
+  "test_size": 8,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "quiero hacer benchmark de la versi\u00f3n v1 vs v2 de mi skill de shaping",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "crea un skill a partir de esta conversaci\u00f3n donde dise\u00f1amos la arquitectura del m\u00f3dulo de auth",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un skill para automatizar el proceso de code review que siempre sigo en mis PRs",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un skill nuevo para hacer an\u00e1lisis de performance de queries SQL en producci\u00f3n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero medir qu\u00e9 tan bien performa mi skill de debugging comparado con no tener skill",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo instalo un skill de un repositorio de GitHub en Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "acabo de hacer un workflow de deploy con Claude, convi\u00e9rtelo en un skill reutilizable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un error en mi skill, el output del agente no es correcto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo funciona el sistema de permisos de Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 es un skill en Claude Code y para qu\u00e9 sirve?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente React para que use Server Components",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa mi CLAUDE.md y dime si est\u00e1 bien configurado para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "the skill description isn't triggering for the right queries, help me optimize it with evals",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el skill de TDD no se est\u00e1 activando cuando deber\u00eda, el trigger rate es baj\u00edsimo, ay\u00fadame a optimizar la description",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "run evals on my new skill to measure whether it's triggering correctly and producing good outputs",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "planifica la nueva feature de exportaci\u00f3n de datos antes de implementarla",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro los MCP servers en Claude Code para conectar con mi base de datos?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a mejorar el skill de react-best-practices, los outputs no son lo suficientemente espec\u00edficos",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a la interfaz del m\u00f3dulo de autenticaci\u00f3n explorando varias opciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el UserService con TDD",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "quiero hacer benchmark de la versi\u00f3n v1 vs v2 de mi skill de shaping",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "crea un skill a partir de esta conversaci\u00f3n donde dise\u00f1amos la arquitectura del m\u00f3dulo de auth",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un skill para automatizar el proceso de code review que siempre sigo en mis PRs",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "necesito un skill nuevo para hacer an\u00e1lisis de performance de queries SQL en producci\u00f3n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero medir qu\u00e9 tan bien performa mi skill de debugging comparado con no tener skill",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo instalo un skill de un repositorio de GitHub en Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "acabo de hacer un workflow de deploy con Claude, convi\u00e9rtelo en un skill reutilizable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un error en mi skill, el output del agente no es correcto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo funciona el sistema de permisos de Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 es un skill en Claude Code y para qu\u00e9 sirve?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente React para que use Server Components",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa mi CLAUDE.md y dime si est\u00e1 bien configurado para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Use this skill whenever a user wants to build, capture, or refine a reusable Claude workflow into a skill file. Triggers include: converting a conversation or workflow into a skill, creating a skill for any recurring task (code review, deploys, SQL analysis, etc.), editing or improving an existing skill, comparing two versions of a skill, measuring how well a skill performs, or optimizing when a skill triggers. If the user says \"make this a skill\", \"turn this into a skill\", \"I want a skill for X\", \"benchmark my skill\", or \"compare skill v1 vs v2\" \u2014 use this skill.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "necesito un skill nuevo para hacer an\u00e1lisis de performance de queries SQL en producci\u00f3n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "crea un skill a partir de esta conversaci\u00f3n donde dise\u00f1amos la arquitectura del m\u00f3dulo de auth",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero hacer benchmark de la versi\u00f3n v1 vs v2 de mi skill de shaping",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero medir qu\u00e9 tan bien performa mi skill de debugging comparado con no tener skill",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un skill para automatizar el proceso de code review que siempre sigo en mis PRs",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "acabo de hacer un workflow de deploy con Claude, convi\u00e9rtelo en un skill reutilizable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona el sistema de permisos de Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 es un skill en Claude Code y para qu\u00e9 sirve?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un error en mi skill, el output del agente no es correcto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo instalo un skill de un repositorio de GitHub en Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa mi CLAUDE.md y dime si est\u00e1 bien configurado para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente React para que use Server Components",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "run evals on my new skill to measure whether it's triggering correctly and producing good outputs",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "the skill description isn't triggering for the right queries, help me optimize it with evals",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el skill de TDD no se est\u00e1 activando cuando deber\u00eda, el trigger rate es baj\u00edsimo, ay\u00fadame a optimizar la description",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "dise\u00f1a la interfaz del m\u00f3dulo de autenticaci\u00f3n explorando varias opciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "ay\u00fadame a mejorar el skill de react-best-practices, los outputs no son lo suficientemente espec\u00edficos",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "planifica la nueva feature de exportaci\u00f3n de datos antes de implementarla",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro los MCP servers en Claude Code para conectar con mi base de datos?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el UserService con TDD",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "necesito un skill nuevo para hacer an\u00e1lisis de performance de queries SQL en producci\u00f3n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "crea un skill a partir de esta conversaci\u00f3n donde dise\u00f1amos la arquitectura del m\u00f3dulo de auth",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero hacer benchmark de la versi\u00f3n v1 vs v2 de mi skill de shaping",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero medir qu\u00e9 tan bien performa mi skill de debugging comparado con no tener skill",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un skill para automatizar el proceso de code review que siempre sigo en mis PRs",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "acabo de hacer un workflow de deploy con Claude, convi\u00e9rtelo en un skill reutilizable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "c\u00f3mo funciona el sistema de permisos de Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 es un skill en Claude Code y para qu\u00e9 sirve?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "hay un error en mi skill, el output del agente no es correcto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo instalo un skill de un repositorio de GitHub en Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa mi CLAUDE.md y dime si est\u00e1 bien configurado para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente React para que use Server Components",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "Invoke this skill immediately when the user wants to: create a new Claude Code skill for any purpose, convert a workflow or conversation into a reusable skill, edit or improve an existing skill, run evals or benchmark skill performance, compare skill versions, or optimize skill triggering. This applies whether the user says \"make a skill\", \"turn this into a skill\", \"I need a skill for X\", or any variation in any language. Do not attempt skill creation, evaluation, or optimization without this skill \u2014 it provides the full methodology, eval scripts, and review tooling you need.",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "necesito un skill nuevo para hacer an\u00e1lisis de performance de queries SQL en producci\u00f3n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero hacer benchmark de la versi\u00f3n v1 vs v2 de mi skill de shaping",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero medir qu\u00e9 tan bien performa mi skill de debugging comparado con no tener skill",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "crea un skill a partir de esta conversaci\u00f3n donde dise\u00f1amos la arquitectura del m\u00f3dulo de auth",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un skill para automatizar el proceso de code review que siempre sigo en mis PRs",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "acabo de hacer un workflow de deploy con Claude, convi\u00e9rtelo en un skill reutilizable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un error en mi skill, el output del agente no es correcto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo instalo un skill de un repositorio de GitHub en Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa mi CLAUDE.md y dime si est\u00e1 bien configurado para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo funciona el sistema de permisos de Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 es un skill en Claude Code y para qu\u00e9 sirve?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente React para que use Server Components",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "the skill description isn't triggering for the right queries, help me optimize it with evals",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "run evals on my new skill to measure whether it's triggering correctly and producing good outputs",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "el skill de TDD no se est\u00e1 activando cuando deber\u00eda, el trigger rate es baj\u00edsimo, ay\u00fadame a optimizar la description",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "ay\u00fadame a mejorar el skill de react-best-practices, los outputs no son lo suficientemente espec\u00edficos",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "planifica la nueva feature de exportaci\u00f3n de datos antes de implementarla",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "escribe tests para el UserService con TDD",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "dise\u00f1a la interfaz del m\u00f3dulo de autenticaci\u00f3n explorando varias opciones",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo configuro los MCP servers en Claude Code para conectar con mi base de datos?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "necesito un skill nuevo para hacer an\u00e1lisis de performance de queries SQL en producci\u00f3n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero hacer benchmark de la versi\u00f3n v1 vs v2 de mi skill de shaping",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero medir qu\u00e9 tan bien performa mi skill de debugging comparado con no tener skill",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "crea un skill a partir de esta conversaci\u00f3n donde dise\u00f1amos la arquitectura del m\u00f3dulo de auth",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "quiero crear un skill para automatizar el proceso de code review que siempre sigo en mis PRs",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "acabo de hacer un workflow de deploy con Claude, convi\u00e9rtelo en un skill reutilizable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "hay un error en mi skill, el output del agente no es correcto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo instalo un skill de un repositorio de GitHub en Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "revisa mi CLAUDE.md y dime si est\u00e1 bien configurado para mi proyecto",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "c\u00f3mo funciona el sistema de permisos de Claude Code?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "qu\u00e9 es un skill en Claude Code y para qu\u00e9 sirve?",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "refactoriza este componente React para que use Server Components",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,10 +1,7 @@
 ---
 name: compound-component
 description: |
-  Compound Component pattern for composable, flexible React UI. Context + dot notation.
-  Use when: building UI with shared implicit state, flexible slot-based APIs, design system components.
-  Trigger on: "compound component", "componente composable", "context UI", "dot notation component",
-  "Card.Header", "flexible component API", "Radix-style", "Headless UI pattern".
+  Invoke when someone needs to build a React component with dot-notation sub-parts (Modal.Header, Tabs.Panel, Select.Trigger, Stepper.Step) that implicitly share state — the Compound Component pattern. Prime signals: designing sub-components that communicate without prop drilling, building composable widget APIs like Radix UI or shadcn/ui, structuring a complex UI widget where multiple independent pieces share a Context. Also use for: TypeScript dot-notation component APIs, slot-based UI components where consumers can reorder or omit parts, or any "how do I structure X with sub-components?" question about Accordion, Select, Modal, Tabs, Table, or Stepper.
 author: Gonzalo Astudillo
 version: 1.0.0
 date: 2026-04-14

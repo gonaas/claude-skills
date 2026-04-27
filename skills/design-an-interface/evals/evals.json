@@ -1,0 +1,22 @@
+[
+  {"query": "diseña la interfaz TypeScript del servicio de notificaciones, no sé si usar callbacks, eventos o promesas", "should_trigger": true},
+  {"query": "cómo debería ser la API del hook useAuth? tengo varias ideas pero no sé cuál es mejor", "should_trigger": true},
+  {"query": "need to design the interface for my payment processor module, want to explore 2-3 different approaches before committing", "should_trigger": true},
+  {"query": "what should the contract look like for my caching layer? thinking about method-based vs decorator-based", "should_trigger": true},
+  {"query": "diseña el contrato del UserRepository, quiero ver distintas opciones antes de implementarlo", "should_trigger": true},
+  {"query": "voy a crear un SDK público para mi API, ayúdame a diseñar la interfaz que verán los desarrolladores", "should_trigger": true},
+  {"query": "tengo que definir la interfaz del módulo de autenticación, explora conmigo builder pattern vs factory vs directo", "should_trigger": true},
+  {"query": "design the API for my event bus system, considering push vs pull vs hybrid approaches", "should_trigger": true},
+  {"query": "cómo debería ser la interfaz del cliente HTTP? quiero algo ergonómico que oculte la complejidad", "should_trigger": true},
+  {"query": "necesito diseñar la API de mi librería de validación antes de implementarla, explora varias opciones", "should_trigger": true},
+  {"query": "planifica la implementación del módulo de notificaciones para los próximos dos sprints", "should_trigger": false},
+  {"query": "escribe los tests para el UserRepository antes de implementarlo", "should_trigger": false},
+  {"query": "refactoriza esta clase para reducir el acoplamiento entre módulos", "should_trigger": false},
+  {"query": "hay un bug en mi cliente HTTP, las requests se duplican en retry", "should_trigger": false},
+  {"query": "diseña el schema de base de datos para el módulo de usuarios y roles", "should_trigger": false},
+  {"query": "cómo funciona TypeScript conditional types con generics?", "should_trigger": false},
+  {"query": "crea un componente React para mostrar el perfil de usuario", "should_trigger": false},
+  {"query": "configura webpack con code splitting para mi proyecto", "should_trigger": false},
+  {"query": "revisa si esta implementación del repositorio sigue los principios SOLID", "should_trigger": false},
+  {"query": "cómo implemento dependency injection en Node.js sin un framework?", "should_trigger": false}
+]

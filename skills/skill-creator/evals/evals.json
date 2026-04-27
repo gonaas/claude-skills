@@ -1,0 +1,22 @@
+[
+  {"query": "quiero crear un skill para automatizar el proceso de code review que siempre sigo en mis PRs", "should_trigger": true},
+  {"query": "acabo de hacer un workflow de deploy con Claude, conviértelo en un skill reutilizable", "should_trigger": true},
+  {"query": "el skill de TDD no se está activando cuando debería, el trigger rate es bajísimo, ayúdame a optimizar la description", "should_trigger": true},
+  {"query": "run evals on my new skill to measure whether it's triggering correctly and producing good outputs", "should_trigger": true},
+  {"query": "quiero medir qué tan bien performa mi skill de debugging comparado con no tener skill", "should_trigger": true},
+  {"query": "necesito un skill nuevo para hacer análisis de performance de queries SQL en producción", "should_trigger": true},
+  {"query": "quiero hacer benchmark de la versión v1 vs v2 de mi skill de shaping", "should_trigger": true},
+  {"query": "the skill description isn't triggering for the right queries, help me optimize it with evals", "should_trigger": true},
+  {"query": "ayúdame a mejorar el skill de react-best-practices, los outputs no son lo suficientemente específicos", "should_trigger": true},
+  {"query": "crea un skill a partir de esta conversación donde diseñamos la arquitectura del módulo de auth", "should_trigger": true},
+  {"query": "cómo instalo un skill de un repositorio de GitHub en Claude Code?", "should_trigger": false},
+  {"query": "hay un error en mi skill, el output del agente no es correcto", "should_trigger": false},
+  {"query": "planifica la nueva feature de exportación de datos antes de implementarla", "should_trigger": false},
+  {"query": "diseña la interfaz del módulo de autenticación explorando varias opciones", "should_trigger": false},
+  {"query": "escribe tests para el UserService con TDD", "should_trigger": false},
+  {"query": "cómo configuro los MCP servers en Claude Code para conectar con mi base de datos?", "should_trigger": false},
+  {"query": "revisa mi CLAUDE.md y dime si está bien configurado para mi proyecto", "should_trigger": false},
+  {"query": "qué es un skill en Claude Code y para qué sirve?", "should_trigger": false},
+  {"query": "cómo funciona el sistema de permisos de Claude Code?", "should_trigger": false},
+  {"query": "refactoriza este componente React para que use Server Components", "should_trigger": false}
+]

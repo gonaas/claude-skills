@@ -1,0 +1,22 @@
+[
+  {"query": "quiero implementar el módulo de autenticación en mi app Express, ayúdame a hacerlo bien desde el principio", "should_trigger": true},
+  {"query": "escribe los tests para el UserService antes de que lo implemente, aquí está la interfaz", "should_trigger": true},
+  {"query": "I need to add a checkout feature to my e-commerce app, let's do it test-first", "should_trigger": true},
+  {"query": "arregla este bug en calculateDiscount(), los tests están fallando con 'expected 15 but got 20'", "should_trigger": true},
+  {"query": "quiero implementar búsqueda con filtros en mi API REST, hazlo con TDD", "should_trigger": true},
+  {"query": "necesito un hotfix urgente para el bug de producción en el payment flow", "should_trigger": true},
+  {"query": "ayúdame a escribir un test que capture el comportamiento del LoginRepository antes de refactorizarlo", "should_trigger": true},
+  {"query": "implement the password reset feature, write the failing test first", "should_trigger": true},
+  {"query": "tengo que añadir rate limiting a mi API, empecemos por los tests", "should_trigger": true},
+  {"query": "my OrderProcessor class needs a new applyDiscount() method, let's do TDD", "should_trigger": true},
+  {"query": "cómo configuro Jest con TypeScript en un proyecto Node.js?", "should_trigger": false},
+  {"query": "explícame la diferencia entre unit tests e integration tests", "should_trigger": false},
+  {"query": "hay un bug en producción, el servidor se cae cuando hay muchas conexiones simultáneas", "should_trigger": false},
+  {"query": "revisa mis tests existentes y dime si tienen buena cobertura", "should_trigger": false},
+  {"query": "cómo hago mocking de módulos con Vitest?", "should_trigger": false},
+  {"query": "refactoriza esta clase UserService para reducir el acoplamiento", "should_trigger": false},
+  {"query": "genera la documentación JSDoc para este módulo", "should_trigger": false},
+  {"query": "cuáles son los mejores frameworks de testing para React?", "should_trigger": false},
+  {"query": "ayúdame a hacer un code review de este PR de autenticación", "should_trigger": false},
+  {"query": "planifica la arquitectura del módulo de pagos antes de implementarlo", "should_trigger": false}
+]

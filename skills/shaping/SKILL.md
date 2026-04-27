@@ -1,9 +1,7 @@
 ---
 name: shaping
 description: |
-  Shape Up methodology: design before implementation. NO IMPLEMENTATION BEFORE ALIGNMENT.
-  Use when: planning features, estimating work, starting a new task, architectural decisions.
-  Trigger on: "nueva feature", "cómo abordar", "diseña", "planifica", "cómo implemento", "qué enfoque".
+  Use when someone has a feature requirement or goal but needs to figure out the approach and scope before writing code. The user knows WHAT they want but not HOW to bound or structure the work. Signals: "how do I approach X?", "where do I start with Y?", "help me scope/plan Z", "the client/PM wants W — what do we do?", "cómo lo abordo", "por dónde empiezo", "qué enfoque tomamos", "ayúdame a acotarlo". This applies even when the query starts with "I need to implement X" — if they're asking how to tackle it rather than asking you to do it, use this skill. Skip when the path is already clear and the user wants execution: fix this bug, write this endpoint, optimize this query, configure this tool, review this PR.
 author: Gonzalo Astudillo
 version: 1.0.0
 date: 2026-04-14

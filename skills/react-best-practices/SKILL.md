@@ -1,10 +1,7 @@
 ---
 name: react-best-practices
 description: |
-  React and Next.js best practices from Vercel. Server Components by default, use client at the edge.
-  Use when: building React components, Next.js features, data fetching, routing, performance.
-  Trigger on: "componente React", "Next.js", "Vercel", "Server Component", "Client Component",
-  "data fetching", "loading state", "metadata", "image", "font", "App Router".
+  Use this skill when the user asks HOW TO do something specific in Next.js or the App Router: how to fetch data (instead of useEffect), configure images or fonts, add SEO metadata, decide between Server and Client Components, structure route handlers, or handle loading states with Suspense. Applies to Next.js 13+, App Router architecture, and Vercel deployment decisions. Skip for React questions that have no Next.js context — animations, testing, hooks refactors, or framework comparisons.
 author: Gonzalo Astudillo
 version: 1.0.0
 date: 2026-04-14
@@ -86,13 +83,8 @@ Use the Metadata API — never manual `<head>` tags.
 // app/page.tsx
 export const metadata = {
   title: "My App",
-  description: "...",
-  openGraph: { images: ["/og.png"] }
-}
-```
-
-## Loading & Streaming
-
+  description: |
+  Use this skill when the user asks HOW TO do something specific in Next.js or the App Router: how to fetch data (instead of useEffect), configure images or fonts, add SEO metadata, decide between Server and Client Components, structure route handlers, or handle loading states with Suspense. Applies to Next.js 13+, App Router architecture, and Vercel deployment decisions. Skip for React questions that have no Next.js context — animations, testing, hooks refactors, or framework comparisons.
 Use `loading.tsx` for route-level loading states. Use `<Suspense>` for component-level.
 
 ```tsx

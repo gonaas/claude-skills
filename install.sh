@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
-SKILLS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/skills"
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SKILLS_DIR="$REPO_DIR/skills"
+COMMANDS_DIR="$REPO_DIR/commands"
 
 strip_frontmatter() {
   awk 'BEGIN{f=0} /^---/{f++; next} f!=1{print}' "$1"
@@ -10,7 +12,12 @@ strip_frontmatter() {
 install_claude_code() {
   mkdir -p ~/.claude/skills
   cp -r "$SKILLS_DIR"/. ~/.claude/skills/
-  echo "✓ Claude Code  →  ~/.claude/skills/"
+  echo "✓ Claude Code skills    →  ~/.claude/skills/"
+  if [ -d "$COMMANDS_DIR" ]; then
+    mkdir -p ~/.claude/commands
+    cp -r "$COMMANDS_DIR"/. ~/.claude/commands/
+    echo "✓ Claude Code commands  →  ~/.claude/commands/"
+  fi
 }
 
 install_opencode() {
